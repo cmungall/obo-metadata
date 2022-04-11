@@ -1,0 +1,3 @@
+name: obo-metadata
+description: OBO Ontology Metadata
+source_schema_path: src/linkml/obo_metadata.yaml

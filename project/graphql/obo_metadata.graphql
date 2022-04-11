@@ -1,0 +1,683 @@
+type AnnotationProperty
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    domain: [String]
+    range: [String]
+    isClassLevel: Boolean
+    isMetadataTag: Boolean
+    label: LabelType
+    definition: [NarrativeText]
+    broadMatch: [Property]
+    exactMatch: [Property]
+    narrowMatch: [Property]
+    closeMatch: [Property]
+    subClassOf: [Property]
+    shorthand: [String]
+  }
+
+interface AnnotationPropertyMixin
+  {
+  }
+
+interface Anonymous
+  {
+  }
+
+type AnonymousClassExpression
+  {
+  }
+
+type Any
+  {
+  }
+
+type Axiom
+  {
+    annotatedProperty: AnnotationProperty
+    annotatedSource: Thing
+    annotatedTarget: Any
+    source: [String]
+    isInferred: Boolean
+    notes: [String]
+    url: String
+    hasAxiomLabel: Thing
+    isADefiningPropertyChainAxiom: String
+    isADefiningPropertyChainAxiomWhereSecondArgumentIsReflexive: String
+    createdBy: String
+    dateRetrieved: String
+    evidence: String
+    externalOntology: [String]
+    databaseCrossReference: [CURIELiteral]
+    hasExactSynonym: [LabelType]
+    hasSynonymType: [AnnotationProperty]
+    comment: [String]
+    label: LabelType
+    seeAlso: [Thing]
+  }
+
+type Class implements ClassExpression
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    neverInTaxon: [Class]
+    disconnectedFrom: Class
+    hasRank: Thing
+    label: LabelType!
+    definition: [NarrativeText]
+    broadMatch: [Class]
+    exactMatch: [Class]
+    narrowMatch: [Class]
+    closeMatch: [Class]
+    subClassOf: [Class]
+    disjointWith: [String]
+    equivalentClass: [String]
+    intersectionOf: String
+    cardinality: String
+    complementOf: String
+    oneOf: ClassExpression
+    unionOf: String
+  }
+
+interface ClassExpression
+  {
+    disjointWith: [String]
+    equivalentClass: [String]
+    intersectionOf: String
+    subClassOf: [ClassExpression]
+    cardinality: String
+    complementOf: String
+    oneOf: ClassExpression
+    unionOf: String
+  }
+
+interface Expression
+  {
+  }
+
+interface HasCategory
+  {
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+  }
+
+interface HasLifeCycle
+  {
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+  }
+
+interface HasMappings
+  {
+    broadMatch: [Thing]
+    closeMatch: [Thing]
+    exactMatch: [Thing]
+    narrowMatch: [Thing]
+    databaseCrossReference: [CURIELiteral]
+  }
+
+interface HasMinimalMetadata
+  {
+    label: LabelType
+    definition: [NarrativeText]
+  }
+
+interface HasProvenance
+  {
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+  }
+
+interface HasSynonyms
+  {
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+  }
+
+interface HasUserInformation
+  {
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+  }
+
+type NamedIndividual
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    broadMatch: [Thing]
+    closeMatch: [Thing]
+    exactMatch: [Thing]
+    narrowMatch: [Thing]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    label: LabelType
+    definition: [NarrativeText]
+  }
+
+type NamedObject
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+  }
+
+type ObjectProperty implements PropertyExpression
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    domain: [String]
+    range: [String]
+    isClassLevel: Boolean
+    isMetadataTag: Boolean
+    label: LabelType
+    definition: [NarrativeText]
+    broadMatch: [Property]
+    exactMatch: [Property]
+    narrowMatch: [Property]
+    closeMatch: [Property]
+    subClassOf: [Property]
+    temporalInterpretation: NamedIndividual
+    isCyclic: Boolean
+    isTransitive: Boolean
+    shorthand: [String]
+    equivalentProperty: [Thing]
+    inverseOf: String
+    propertyChainAxiom: [String]
+    disjointWith: [String]
+  }
+
+type Ontology
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    title: NarrativeText!
+    hasOntologyRootTerm: [Class]
+    license: Thing!
+    source: [String]
+    versionIRI: Uriorcurie!
+    versionInfo: String!
+    comment: [String]
+    creator: [String]
+    created: String
+    imports: String
+  }
+
+interface Property
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    domain: [String]
+    range: [String]
+    isClassLevel: Boolean
+    isMetadataTag: Boolean
+    label: LabelType
+    definition: [NarrativeText]
+    broadMatch: [Property]
+    exactMatch: [Property]
+    narrowMatch: [Property]
+    closeMatch: [Property]
+    subClassOf: [Property]
+  }
+
+interface PropertyExpression
+  {
+    disjointWith: [String]
+  }
+
+type Restriction implements ClassExpression
+  {
+    onProperty: [PropertyExpression]
+    someValuesFrom: [String]
+    allValuesFrom: String
+    disjointWith: [String]
+    equivalentClass: [String]
+    intersectionOf: String
+    subClassOf: [ClassExpression]
+    cardinality: String
+    complementOf: String
+    oneOf: ClassExpression
+    unionOf: String
+  }
+
+type Subset
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    domain: [String]
+    range: [String]
+    isClassLevel: Boolean
+    isMetadataTag: Boolean
+    label: LabelType
+    definition: [NarrativeText]
+    broadMatch: [Property]
+    exactMatch: [Property]
+    narrowMatch: [Property]
+    closeMatch: [Property]
+    subClassOf: [Property]
+    shorthand: [String]
+  }
+
+type Term implements HasSynonyms, HasLifeCycle, HasProvenance, HasMappings, HasCategory, HasUserInformation, HasMinimalMetadata
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    broadMatch: [Thing]
+    closeMatch: [Thing]
+    exactMatch: [Thing]
+    narrowMatch: [Thing]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    label: LabelType
+    definition: [NarrativeText]
+  }
+
+interface Thing
+  {
+    type: [Uriorcurie]
+  }
+
+type TransitiveProperty
+  {
+    type: [Uriorcurie]
+    id: Uriorcurie!
+    hasExactSynonym: [LabelType]
+    hasNarrowSynonym: [LabelType]
+    hasBroadSynonym: [LabelType]
+    hasRelatedSynonym: [LabelType]
+    alternativeTerm: [String]
+    iSAAlternativeTerm: [String]
+    iEDBAlternativeTerm: [String]
+    editorPreferredTerm: [String]
+    oBOFoundryUniqueLabel: [String]
+    deprecated: Boolean
+    hasObsolescenceReason: String
+    termReplacedBy: Thing
+    consider: [String]
+    hasAlternativeId: [Uriorcurie]
+    excludedFromQCCheck: Thing
+    excludedSubClassOf: [Class]
+    excludedSynonym: [String]
+    shouldConformTo: Thing
+    createdBy: String
+    creationDate: [String]
+    contributor: [Thing]
+    creator: [String]
+    created: String
+    date: [String]
+    isDefinedBy: Ontology
+    editorNote: [NarrativeText]
+    termEditor: [String]
+    definitionSource: [String]
+    ontologyTermRequester: String
+    importedFrom: [NamedIndividual]
+    termTrackerItem: [String]
+    databaseCrossReference: [CURIELiteral]
+    hasOboNamespace: [String]
+    category: String
+    inSubset: [Subset]
+    conformsTo: [Thing]
+    comment: [String]
+    seeAlso: [Thing]
+    image: Thing
+    exampleOfUsage: [String]
+    curatorNote: [String]
+    hasCurationStatus: String
+    depictedBy: [String]
+    page: [String]
+    domain: [String]
+    range: [String]
+    isClassLevel: Boolean
+    isMetadataTag: Boolean
+    label: LabelType
+    definition: [NarrativeText]
+    broadMatch: [Property]
+    exactMatch: [Property]
+    narrowMatch: [Property]
+    closeMatch: [Property]
+    subClassOf: [Property]
+    temporalInterpretation: NamedIndividual
+    isCyclic: Boolean
+    isTransitive: Boolean
+    shorthand: [String]
+    equivalentProperty: [Thing]
+    inverseOf: String
+    propertyChainAxiom: [String]
+    disjointWith: [String]
+  }
+

@@ -1,0 +1,4009 @@
+{
+  "name": "Ontology-Metadata",
+  "description": "Schema for ontology metadata",
+  "title": "Ontology Metadata Ontology Schema",
+  "id": "http://purl.obolibrary.org/obo/omo/schema",
+  "version": "0.0.1",
+  "imports": [
+    "linkml:types"
+  ],
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "prefixes": [
+    {
+      "prefix_prefix": "omoschema",
+      "prefix_reference": "http://purl.obolibrary.org/obo/schema/"
+    },
+    {
+      "prefix_prefix": "obo",
+      "prefix_reference": "http://purl.obolibrary.org/obo/"
+    },
+    {
+      "prefix_prefix": "RO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/RO_"
+    },
+    {
+      "prefix_prefix": "OMO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/OMO_"
+    },
+    {
+      "prefix_prefix": "IAO",
+      "prefix_reference": "http://purl.obolibrary.org/obo/IAO_"
+    },
+    {
+      "prefix_prefix": "OBI",
+      "prefix_reference": "http://purl.obolibrary.org/obo/OBI_"
+    },
+    {
+      "prefix_prefix": "NCIT",
+      "prefix_reference": "http://purl.obolibrary.org/obo/NCIT_"
+    },
+    {
+      "prefix_prefix": "oio",
+      "prefix_reference": "http://www.geneontology.org/formats/oboInOwl#"
+    },
+    {
+      "prefix_prefix": "dcterms",
+      "prefix_reference": "http://purl.org/dc/terms/"
+    },
+    {
+      "prefix_prefix": "linkml",
+      "prefix_reference": "https://w3id.org/linkml/"
+    },
+    {
+      "prefix_prefix": "skos",
+      "prefix_reference": "http://www.w3.org/2004/02/skos/core#"
+    },
+    {
+      "prefix_prefix": "biolink",
+      "prefix_reference": "https://w3id.org/biolink/vocab/"
+    },
+    {
+      "prefix_prefix": "sdo",
+      "prefix_reference": "http://schema.org/"
+    },
+    {
+      "prefix_prefix": "owl",
+      "prefix_reference": "http://www.w3.org/2002/07/owl#"
+    },
+    {
+      "prefix_prefix": "rdfs",
+      "prefix_reference": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+      "prefix_prefix": "pav",
+      "prefix_reference": "http://purl.org/pav/"
+    },
+    {
+      "prefix_prefix": "prov",
+      "prefix_reference": "http://www.w3.org/ns/prov-o#"
+    }
+  ],
+  "default_curi_maps": [
+    "obo_context",
+    "semweb_context"
+  ],
+  "default_prefix": "omoschema",
+  "default_range": "string",
+  "subsets": [
+    {
+      "name": "go_required_profile",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/GoRequiredProfile",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "@type": "SubsetDefinition"
+    },
+    {
+      "name": "go_recommended_profile",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/GoRecommendedProfile",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "@type": "SubsetDefinition"
+    },
+    {
+      "name": "go_permitted_profile",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/GoPermittedProfile",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "@type": "SubsetDefinition"
+    },
+    {
+      "name": "obi_required_profile",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/ObiRequiredProfile",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "@type": "SubsetDefinition"
+    },
+    {
+      "name": "obi_permitted_profile",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/ObiPermittedProfile",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "@type": "SubsetDefinition"
+    },
+    {
+      "name": "allotrope_required_profile",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/AllotropeRequiredProfile",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "see_also": [
+        "https://gitlab.com/allotrope-open-source/allotrope-devops/-/wikis/uploads/Allotrope_Framework_Term_Curation_Style_Guide.pdf"
+      ],
+      "@type": "SubsetDefinition"
+    },
+    {
+      "name": "allotrope_permitted_profile",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/AllotropePermittedProfile",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "see_also": [
+        "https://gitlab.com/allotrope-open-source/allotrope-devops/-/wikis/uploads/Allotrope_Framework_Term_Curation_Style_Guide.pdf"
+      ],
+      "@type": "SubsetDefinition"
+    }
+  ],
+  "types": [
+    {
+      "name": "iri_type",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/IriType",
+      "description": "An IRI",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "typeof": "uriorcurie",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "CURIELiteral",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/CURIELiteral",
+      "description": "A string representation of a CURIE",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "URLLiteral",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/URLLiteral",
+      "description": "A URL representation of a CURIE",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "label_type",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/LabelType",
+      "description": "A string that provides a human-readable name for an entity",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "narrative_text",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/NarrativeText",
+      "description": "A string that provides a human-readable description of something",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "typeof": "string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "string",
+      "definition_uri": "https://w3id.org/linkml/String",
+      "description": "A character string",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "integer",
+      "definition_uri": "https://w3id.org/linkml/Integer",
+      "description": "An integer",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "int",
+      "uri": "http://www.w3.org/2001/XMLSchema#integer",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "boolean",
+      "definition_uri": "https://w3id.org/linkml/Boolean",
+      "description": "A binary (true or false) value",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Bool",
+      "uri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "repr": "bool",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "float",
+      "definition_uri": "https://w3id.org/linkml/Float",
+      "description": "A real number that conforms to the xsd:float specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#float",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "double",
+      "definition_uri": "https://w3id.org/linkml/Double",
+      "description": "A real number that conforms to the xsd:double specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "float",
+      "uri": "http://www.w3.org/2001/XMLSchema#double",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "decimal",
+      "definition_uri": "https://w3id.org/linkml/Decimal",
+      "description": "A real number with arbitrary precision that conforms to the xsd:decimal specification",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "Decimal",
+      "uri": "http://www.w3.org/2001/XMLSchema#decimal",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "time",
+      "definition_uri": "https://w3id.org/linkml/Time",
+      "description": "A time object represents a (local) time of day, independent of any particular day",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "XSDTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "date",
+      "definition_uri": "https://w3id.org/linkml/Date",
+      "description": "a date (year, month and day) in an idealized calendar",
+      "notes": [
+        "URI is dateTime because OWL reasoners don't work with straight date or time"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "XSDDate",
+      "uri": "http://www.w3.org/2001/XMLSchema#date",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "datetime",
+      "definition_uri": "https://w3id.org/linkml/Datetime",
+      "description": "The combination of a date and time",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "XSDDateTime",
+      "uri": "http://www.w3.org/2001/XMLSchema#dateTime",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uriorcurie",
+      "definition_uri": "https://w3id.org/linkml/Uriorcurie",
+      "description": "a URI or a CURIE",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URIorCURIE",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "uri",
+      "definition_uri": "https://w3id.org/linkml/Uri",
+      "description": "a complete URI",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "URI",
+      "uri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "ncname",
+      "definition_uri": "https://w3id.org/linkml/Ncname",
+      "description": "Prefix part of CURIE",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NCName",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "objectidentifier",
+      "definition_uri": "https://w3id.org/linkml/Objectidentifier",
+      "description": "A URI or CURIE that represents an object in the model.",
+      "comments": [
+        "Used for inheritence and type checking"
+      ],
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "ElementIdentifier",
+      "uri": "http://www.w3.org/ns/shex#iri",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "nodeidentifier",
+      "definition_uri": "https://w3id.org/linkml/Nodeidentifier",
+      "description": "A URI, CURIE or BNODE that represents a node in a model.",
+      "from_schema": "https://w3id.org/linkml/types",
+      "imported_from": "linkml:types",
+      "base": "NodeIdentifier",
+      "uri": "http://www.w3.org/ns/shex#nonLiteral",
+      "repr": "str",
+      "@type": "TypeDefinition"
+    }
+  ],
+  "slots": [
+    {
+      "name": "core_property",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/core_property",
+      "description": "abstract grouping of core properties",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/core_property",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "id",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/id",
+      "description": "this maps to the URI in RDF",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "core_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/id",
+      "identifier": true,
+      "owner": "NamedObject",
+      "domain_of": [
+        "NamedObject"
+      ],
+      "range": "uriorcurie",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "label",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/label",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ],
+      "comments": [
+        "SHOULD follow OBO label guidelines",
+        "MUST be unique within an ontology",
+        "SHOULD be unique across OBO"
+      ],
+      "in_subset": [
+        "allotrope_required_profile",
+        "go_required_profile",
+        "obi_required_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "core_property",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "owner": "Axiom",
+      "domain_of": [
+        "HasMinimalMetadata",
+        "Axiom"
+      ],
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "definition",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/definition",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000115"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#definition"
+      ],
+      "comments": [
+        "SHOULD be in Aristotelian (genus-differentia) form"
+      ],
+      "in_subset": [
+        "allotrope_required_profile",
+        "go_required_profile",
+        "obi_required_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "core_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000115",
+      "multivalued": true,
+      "owner": "HasMinimalMetadata",
+      "domain_of": [
+        "HasMinimalMetadata"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "title",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/title",
+      "mappings": [
+        "http://purl.org/dc/terms/title"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://purl.org/dc/terms/title",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "match_aspect",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/match_aspect",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "mixin": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/match_aspect",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "match",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/match",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "mixins": [
+        "match_aspect"
+      ],
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/match",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "broadMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/broadMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#broadMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "match",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "HasMappings",
+      "domain_of": [
+        "HasMappings"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "closeMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/closeMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#closeMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "match",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "HasMappings",
+      "domain_of": [
+        "HasMappings"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "exactMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/exactMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#exactMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "match",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "HasMappings",
+      "domain_of": [
+        "HasMappings"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "narrowMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/narrowMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#narrowMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "match",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "HasMappings",
+      "domain_of": [
+        "HasMappings"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "database_cross_reference",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/database_cross_reference",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "match",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "multivalued": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "HasMappings",
+        "Axiom"
+      ],
+      "range": "CURIELiteral",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "informative_property",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/informative_property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/informative_property",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "comment",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/comment",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#comment"
+      ],
+      "comments": [
+        "in obo format, a term cannot have more than one comment"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "multivalued": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "HasUserInformation",
+        "Ontology",
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "category",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/category",
+      "mappings": [
+        "https://w3id.org/biolink/vocab/category"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "https://w3id.org/biolink/vocab/category",
+      "owner": "HasCategory",
+      "domain_of": [
+        "HasCategory"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "image",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/image",
+      "mappings": [
+        "http://schema.org/image"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://schema.org/image",
+      "inlined": true,
+      "owner": "HasUserInformation",
+      "domain_of": [
+        "HasUserInformation"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "example_of_usage",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/example_of_usage",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000112"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#example"
+      ],
+      "in_subset": [
+        "allotrope_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000112",
+      "multivalued": true,
+      "owner": "HasUserInformation",
+      "domain_of": [
+        "HasUserInformation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "changeNote",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/changeNote",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#changeNote"
+      ],
+      "in_subset": [
+        "allotrope_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#changeNote",
+      "multivalued": true,
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_curation_status",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_curation_status",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000114"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000114",
+      "owner": "HasUserInformation",
+      "domain_of": [
+        "HasUserInformation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "defaultLanguage",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/defaultLanguage",
+      "mappings": [
+        "http://example.org/UNKNOWN/protege/defaultLanguage"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://example.org/UNKNOWN/protege/defaultLanguage",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_ontology_root_term",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_ontology_root_term",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000700"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000700",
+      "multivalued": true,
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "conformsTo",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/conformsTo",
+      "mappings": [
+        "http://purl.org/dc/terms/conformsTo"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://purl.org/dc/terms/conformsTo",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "HasCategory",
+      "domain_of": [
+        "HasCategory"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "license",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/license",
+      "mappings": [
+        "http://purl.org/dc/terms/license"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://purl.org/dc/terms/license",
+      "inlined": true,
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "depicted_by",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/depicted_by",
+      "mappings": [
+        "http://xmlns.com/foaf/0.1/depicted_by"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://xmlns.com/foaf/0.1/depicted_by",
+      "multivalued": true,
+      "owner": "HasUserInformation",
+      "domain_of": [
+        "HasUserInformation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "page",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/page",
+      "mappings": [
+        "http://xmlns.com/foaf/0.1/page"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "informative_property",
+      "slot_uri": "http://xmlns.com/foaf/0.1/page",
+      "multivalued": true,
+      "owner": "HasUserInformation",
+      "domain_of": [
+        "HasUserInformation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "version_property",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/version_property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/version_property",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "versionIRI",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/versionIRI",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#versionIRI"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "version_property",
+      "slot_uri": "http://www.w3.org/2002/07/owl#versionIRI",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "range": "uriorcurie",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "versionInfo",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/versionInfo",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#versionInfo"
+      ],
+      "close_mappings": [
+        "http://purl.org/pav/version"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "version_property",
+      "slot_uri": "http://www.w3.org/2002/07/owl#versionInfo",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "obsoletion_related_property",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/obsoletion_related_property",
+      "description": "Grouping class for all properties related to lifecycle",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/obsoletion_related_property",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "deprecated",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/deprecated",
+      "aliases": [
+        "is obsolete"
+      ],
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#deprecated"
+      ],
+      "in_subset": [
+        "allotrope_permitted_profile",
+        "go_permitted_profile",
+        "obi_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "obsoletion_related_property",
+      "slot_uri": "http://www.w3.org/2002/07/owl#deprecated",
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "term_replaced_by",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/term_replaced_by",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0100001"
+      ],
+      "exact_mappings": [
+        "http://purl.org/dc/terms/isReplacedBy"
+      ],
+      "comments": [
+        "{'RULE': 'subject must be deprecated'}"
+      ],
+      "in_subset": [
+        "go_permitted_profile",
+        "obi_permitted_profile",
+        "allotrope_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "obsoletion_related_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0100001",
+      "inlined": true,
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_obsolescence_reason",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_obsolescence_reason",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000231"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "comments": [
+        "{'RULE': 'subject must be deprecated'}"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "obsoletion_related_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000231",
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "consider",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/consider",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#consider"
+      ],
+      "comments": [
+        "{'RULE': 'subject must be deprecated'}"
+      ],
+      "in_subset": [
+        "go_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "obsoletion_related_property",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#consider",
+      "multivalued": true,
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_alternative_id",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_alternative_id",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"
+      ],
+      "comments": [
+        "{'RULE': 'object must be deprecated'}"
+      ],
+      "in_subset": [
+        "go_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "obsoletion_related_property",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+      "multivalued": true,
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "uriorcurie",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "temporal_interpretation",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/temporal_interpretation",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/RO_0001900"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://purl.obolibrary.org/obo/RO_0001900",
+      "owner": "ObjectProperty",
+      "domain_of": [
+        "ObjectProperty"
+      ],
+      "range": "NamedIndividual",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "never_in_taxon",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/never_in_taxon",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/RO_0002161"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://purl.obolibrary.org/obo/RO_0002161",
+      "multivalued": true,
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_a_defining_property_chain_axiom",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/is_a_defining_property_chain_axiom",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/RO_0002581"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://purl.obolibrary.org/obo/RO_0002581",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_a_defining_property_chain_axiom_where_second_argument_is_reflexive",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/is_a_defining_property_chain_axiom_where_second_argument_is_reflexive",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/RO_0002582"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://purl.obolibrary.org/obo/RO_0002582",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "provenance_property",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/provenance_property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/provenance_property",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "contributor",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/contributor",
+      "mappings": [
+        "http://purl.org/dc/terms/contributor"
+      ],
+      "close_mappings": [
+        "http://www.w3.org/ns/prov-o#wasAttributedTo"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.org/dc/terms/contributor",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "creator",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/creator",
+      "mappings": [
+        "http://purl.org/dc/terms/creator"
+      ],
+      "close_mappings": [
+        "http://www.w3.org/ns/prov-o#wasAttributedTo"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.org/dc/terms/creator",
+      "multivalued": true,
+      "owner": "Ontology",
+      "domain_of": [
+        "HasProvenance",
+        "Ontology"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "created",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/created",
+      "mappings": [
+        "http://purl.org/dc/terms/created"
+      ],
+      "close_mappings": [
+        "http://purl.org/pav/createdOn"
+      ],
+      "description": "when the term came into being",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.org/dc/terms/created",
+      "owner": "Ontology",
+      "domain_of": [
+        "HasProvenance",
+        "Ontology"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "date",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/date",
+      "mappings": [
+        "http://purl.org/dc/terms/date"
+      ],
+      "close_mappings": [
+        "http://purl.org/pav/authoredOn"
+      ],
+      "description": "when the term was updated",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.org/dc/terms/date",
+      "multivalued": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "source",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/source",
+      "mappings": [
+        "http://purl.org/dc/terms/source"
+      ],
+      "exact_mappings": [
+        "http://purl.org/dc/terms/source",
+        "http://www.geneontology.org/formats/oboInOwl#source"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.org/dc/terms/source",
+      "multivalued": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "Ontology",
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "created_by",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/created_by",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#created_by"
+      ],
+      "deprecated": "proposed obsoleted by OMO group 2022-04-12",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "deprecated_element_has_exact_replacement": "creator",
+      "is_a": "provenance_property",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#created_by",
+      "owner": "Axiom",
+      "domain_of": [
+        "HasProvenance",
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "creation_date",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/creation_date",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#creation_date"
+      ],
+      "deprecated": "proposed obsoleted by OMO group 2022-04-12",
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "deprecated_element_has_exact_replacement": "created",
+      "is_a": "provenance_property",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+      "multivalued": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "date_retrieved",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/date_retrieved",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#date_retrieved"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#date_retrieved",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "editor_note",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/editor_note",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000116"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000116",
+      "multivalued": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "narrative_text",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "term_editor",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/term_editor",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000117"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000117",
+      "multivalued": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "definition_source",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/definition_source",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000119"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "in_subset": [
+        "obi_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000119",
+      "multivalued": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "curator_note",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/curator_note",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000232"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000232",
+      "multivalued": true,
+      "owner": "HasUserInformation",
+      "domain_of": [
+        "HasUserInformation"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "term_tracker_item",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/term_tracker_item",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000233"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000233",
+      "multivalued": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ontology_term_requester",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/ontology_term_requester",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000234"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000234",
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "imported_from",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/imported_from",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000412"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000412",
+      "multivalued": true,
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "NamedIndividual",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_axiom_label",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_axiom_label",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0010000"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "provenance_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0010000",
+      "inlined": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "shortcut_annotation_property",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/shortcut_annotation_property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/shortcut_annotation_property",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "disconnected_from",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/disconnected_from",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "shortcut_annotation_property",
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/disconnected_from",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "excluded_axiom",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/excluded_axiom",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/excluded_axiom",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "excluded_from_QC_check",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/excluded_from_QC_check",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "excluded_axiom",
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/excluded_from_QC_check",
+      "inlined": true,
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "excluded_subClassOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/excluded_subClassOf",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "excluded_axiom",
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/excluded_subClassOf",
+      "multivalued": true,
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "excluded_synonym",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/excluded_synonym",
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#hiddenSynonym"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "excluded_axiom",
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/excluded_synonym",
+      "multivalued": true,
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "should_conform_to",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/should_conform_to",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "excluded_axiom",
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/should_conform_to",
+      "inlined": true,
+      "owner": "HasLifeCycle",
+      "domain_of": [
+        "HasLifeCycle"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_rank",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_rank",
+      "exact_mappings": [
+        "http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim#has_rank"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/has_rank",
+      "inlined": true,
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "alternative_term",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/alternative_term",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000118"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#altLabel"
+      ],
+      "in_subset": [
+        "allotrope_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000118",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "ISA_alternative_term",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/ISA_alternative_term",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/OBI_0001847"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "alternative_term",
+      "slot_uri": "http://purl.obolibrary.org/obo/OBI_0001847",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "IEDB_alternative_term",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/IEDB_alternative_term",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/OBI_9991118"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "alternative_term",
+      "slot_uri": "http://purl.obolibrary.org/obo/OBI_9991118",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "OBO_foundry_unique_label",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/OBO_foundry_unique_label",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000589"
+      ],
+      "todos": [
+        "add uniquekey"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "alternative_term",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000589",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "synonym",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/synonym",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasSynonym"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "alternative_term",
+      "abstract": true,
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+      "multivalued": true,
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "editor_preferred_term",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/editor_preferred_term",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000111"
+      ],
+      "in_subset": [
+        "obi_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "alternative_term",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000111",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_exact_synonym",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_exact_synonym",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "synonym",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "multivalued": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "HasSynonyms",
+        "Axiom"
+      ],
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_narrow_synonym",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_narrow_synonym",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "synonym",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_related_synonym",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_related_synonym",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_broad_synonym",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_broad_synonym",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "synonym",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+      "multivalued": true,
+      "owner": "HasSynonyms",
+      "domain_of": [
+        "HasSynonyms"
+      ],
+      "range": "label_type",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_synonym_type",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_synonym_type",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasSynonymType"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasSynonymType",
+      "multivalued": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "AnnotationProperty",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "has_obo_namespace",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/has_obo_namespace",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+      "multivalued": true,
+      "owner": "HasCategory",
+      "domain_of": [
+        "HasCategory"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "in_subset",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/in_subset",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#inSubset"
+      ],
+      "description": "Maps an ontology element to a subset it belongs to",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#inSubset",
+      "multivalued": true,
+      "owner": "HasCategory",
+      "domain_of": [
+        "HasCategory"
+      ],
+      "range": "Subset",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "reification_predicate",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/reification_predicate",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/reification_predicate",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "annotatedProperty",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/annotatedProperty",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#annotatedProperty"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#predicate"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "reification_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#annotatedProperty",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "AnnotationProperty",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "annotatedSource",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/annotatedSource",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#annotatedSource"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#subject"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "reification_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#annotatedSource",
+      "inlined": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "annotatedTarget",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/annotatedTarget",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#annotatedTarget"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#object"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "reification_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#annotatedTarget",
+      "inlined": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "Any",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "imports",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/imports",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#imports"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.w3.org/2002/07/owl#imports",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "logical_predicate",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/logical_predicate",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_uri": "http://purl.obolibrary.org/obo/schema/logical_predicate",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "cardinality",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/cardinality",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#cardinality"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#cardinality",
+      "owner": "ClassExpression",
+      "domain_of": [
+        "ClassExpression"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "complementOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/complementOf",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#complementOf"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#complementOf",
+      "owner": "ClassExpression",
+      "domain_of": [
+        "ClassExpression"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "disjointWith",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/disjointWith",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#disjointWith"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#disjointWith",
+      "multivalued": true,
+      "owner": "PropertyExpression",
+      "domain_of": [
+        "ClassExpression",
+        "PropertyExpression"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "distinctMembers",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/distinctMembers",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#distinctMembers"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#distinctMembers",
+      "inlined": true,
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "equivalentClass",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/equivalentClass",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#equivalentClass"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "mixins": [
+        "match_aspect"
+      ],
+      "slot_uri": "http://www.w3.org/2002/07/owl#equivalentClass",
+      "multivalued": true,
+      "owner": "ClassExpression",
+      "domain_of": [
+        "ClassExpression"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "sameAs",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/sameAs",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#sameAs"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "mixins": [
+        "match_aspect"
+      ],
+      "slot_uri": "http://www.w3.org/2002/07/owl#sameAs",
+      "multivalued": true,
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "equivalentProperty",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/equivalentProperty",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#equivalentProperty"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "mixins": [
+        "match_aspect"
+      ],
+      "slot_uri": "http://www.w3.org/2002/07/owl#equivalentProperty",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "ObjectProperty",
+      "domain_of": [
+        "ObjectProperty"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "hasValue",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/hasValue",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#hasValue"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#hasValue",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "intersectionOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/intersectionOf",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#intersectionOf"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#intersectionOf",
+      "owner": "ClassExpression",
+      "domain_of": [
+        "ClassExpression"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "inverseOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/inverseOf",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#inverseOf"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#inverseOf",
+      "owner": "ObjectProperty",
+      "domain_of": [
+        "ObjectProperty"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "maxQualifiedCardinality",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/maxQualifiedCardinality",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#maxQualifiedCardinality"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#maxQualifiedCardinality",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "members",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/members",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#members"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#members",
+      "inlined": true,
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "minCardinality",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/minCardinality",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#minCardinality"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#minCardinality",
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "minQualifiedCardinality",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/minQualifiedCardinality",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#minQualifiedCardinality"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#minQualifiedCardinality",
+      "range": "integer",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "onClass",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/onClass",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#onClass"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#onClass",
+      "inlined": true,
+      "range": "ClassExpression",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "onProperty",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/onProperty",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#onProperty"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#onProperty",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "Restriction",
+      "domain_of": [
+        "Restriction"
+      ],
+      "range": "PropertyExpression",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "oneOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/oneOf",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#oneOf"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#oneOf",
+      "inlined": true,
+      "owner": "ClassExpression",
+      "domain_of": [
+        "ClassExpression"
+      ],
+      "range": "ClassExpression",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "propertyChainAxiom",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/propertyChainAxiom",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#propertyChainAxiom"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#propertyChainAxiom",
+      "multivalued": true,
+      "owner": "ObjectProperty",
+      "domain_of": [
+        "ObjectProperty"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "qualifiedCardinality",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/qualifiedCardinality",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#qualifiedCardinality"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#qualifiedCardinality",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "allValuesFrom",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/allValuesFrom",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#allValuesFrom"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#allValuesFrom",
+      "owner": "Restriction",
+      "domain_of": [
+        "Restriction"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "someValuesFrom",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/someValuesFrom",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#someValuesFrom"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#someValuesFrom",
+      "multivalued": true,
+      "owner": "Restriction",
+      "domain_of": [
+        "Restriction"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "unionOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/unionOf",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#unionOf"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2002/07/owl#unionOf",
+      "owner": "ClassExpression",
+      "domain_of": [
+        "ClassExpression"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "domain",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/domain",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#domain"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#domain",
+      "multivalued": true,
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "range",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/range",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#range"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#range",
+      "multivalued": true,
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "isDefinedBy",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/isDefinedBy",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+      ],
+      "close_mappings": [
+        "http://purl.org/pav/importedFrom",
+        "http://purl.org/dc/terms/publisher"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+      "owner": "HasProvenance",
+      "domain_of": [
+        "HasProvenance"
+      ],
+      "range": "Ontology",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "seeAlso",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/seeAlso",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+      ],
+      "todos": [
+        "restrict range"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "HasUserInformation",
+        "Axiom"
+      ],
+      "range": "Thing",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "type",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/type",
+      "mappings": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "multivalued": true,
+      "designates_type": true,
+      "owner": "Thing",
+      "domain_of": [
+        "Thing"
+      ],
+      "range": "uriorcurie",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "subClassOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/subClassOf",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "logical_predicate",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "multivalued": true,
+      "inlined": true,
+      "owner": "ClassExpression",
+      "domain_of": [
+        "ClassExpression"
+      ],
+      "range": "ClassExpression",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "oboInOwl_id",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/oboInOwl_id",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#id"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#id",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "oboInOwl_ontology",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/oboInOwl_ontology",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#ontology"
+      ],
+      "deprecated": "todo",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "deprecated_element_has_exact_replacement": "ontology",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#ontology",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_class_level",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/is_class_level",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#is_class_level"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#is_class_level",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_cyclic",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/is_cyclic",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#is_cyclic"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#is_cyclic",
+      "owner": "ObjectProperty",
+      "domain_of": [
+        "ObjectProperty"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_inferred",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/is_inferred",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#is_inferred"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#is_inferred",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_metadata_tag",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/is_metadata_tag",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#is_metadata_tag",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "is_transitive",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/is_transitive",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#is_transitive"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "deprecated_element_has_exact_replacement": "TransitiveProperty",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#is_transitive",
+      "owner": "ObjectProperty",
+      "domain_of": [
+        "ObjectProperty"
+      ],
+      "range": "boolean",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "notes",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/notes",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#notes"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#notes",
+      "multivalued": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "shorthand",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/shorthand",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#shorthand"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#shorthand",
+      "multivalued": true,
+      "owner": "ObjectProperty",
+      "domain_of": [
+        "AnnotationProperty",
+        "ObjectProperty"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "url",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/url",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#url"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#url",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "evidence",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/evidence",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#evidence"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#evidence",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "external_ontology",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/external_ontology",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#external_ontology"
+      ],
+      "deprecated": "deprecated oboInOwl property",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#external_ontology",
+      "multivalued": true,
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "NCIT_definition_source",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/NCIT_definition_source",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/NCIT_P378"
+      ],
+      "deprecated": "use OMO over NCIT",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "deprecated_element_has_exact_replacement": "definition_source",
+      "slot_uri": "http://purl.obolibrary.org/obo/NCIT_P378",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "NCIT_term_type",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/NCIT_term_type",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/NCIT_P383"
+      ],
+      "deprecated": "use OMO over NCIT",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "deprecated_element_has_exact_replacement": "category",
+      "slot_uri": "http://purl.obolibrary.org/obo/NCIT_P383",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "NCIT_term_source",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/NCIT_term_source",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/NCIT_P384"
+      ],
+      "deprecated": "use OMO over NCIT",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "deprecated_element_has_exact_replacement": "isDefinedBy",
+      "slot_uri": "http://purl.obolibrary.org/obo/NCIT_P384",
+      "range": "string",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Ontology_title",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/title",
+      "mappings": [
+        "http://purl.org/dc/terms/title"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "title",
+      "domain": "Ontology",
+      "slot_uri": "http://purl.org/dc/terms/title",
+      "alias": "title",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "title",
+      "range": "narrative_text",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Ontology_license",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/license",
+      "mappings": [
+        "http://purl.org/dc/terms/license"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "license",
+      "domain": "Ontology",
+      "slot_uri": "http://purl.org/dc/terms/license",
+      "inlined": true,
+      "alias": "license",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "license",
+      "range": "Thing",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Ontology_versionIRI",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/versionIRI",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#versionIRI"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "versionIRI",
+      "domain": "Ontology",
+      "slot_uri": "http://www.w3.org/2002/07/owl#versionIRI",
+      "alias": "versionIRI",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "versionIRI",
+      "range": "uriorcurie",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Ontology_versionInfo",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/versionInfo",
+      "mappings": [
+        "http://www.w3.org/2002/07/owl#versionInfo"
+      ],
+      "close_mappings": [
+        "http://purl.org/pav/version"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "versionInfo",
+      "domain": "Ontology",
+      "slot_uri": "http://www.w3.org/2002/07/owl#versionInfo",
+      "alias": "versionInfo",
+      "owner": "Ontology",
+      "domain_of": [
+        "Ontology"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "versionInfo",
+      "range": "string",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Class_label",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/label",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ],
+      "comments": [
+        "SHOULD follow OBO label guidelines",
+        "MUST be unique within an ontology",
+        "SHOULD be unique across OBO"
+      ],
+      "in_subset": [
+        "allotrope_required_profile",
+        "go_required_profile",
+        "obi_required_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "label",
+      "domain": "Class",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "alias": "label",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "label",
+      "range": "label_type",
+      "required": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Class_definition",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/definition",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000115"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#definition"
+      ],
+      "comments": [
+        "SHOULD be in Aristotelian (genus-differentia) form"
+      ],
+      "in_subset": [
+        "allotrope_required_profile",
+        "go_required_profile",
+        "obi_required_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "definition",
+      "domain": "Class",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000115",
+      "multivalued": true,
+      "alias": "definition",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "definition",
+      "range": "narrative_text",
+      "recommended": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Class_broadMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/broadMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#broadMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "broadMatch",
+      "domain": "Class",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "multivalued": true,
+      "alias": "broadMatch",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "broadMatch",
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Class_exactMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/exactMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#exactMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "exactMatch",
+      "domain": "Class",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "multivalued": true,
+      "alias": "exactMatch",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "exactMatch",
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Class_narrowMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/narrowMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#narrowMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "narrowMatch",
+      "domain": "Class",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "multivalued": true,
+      "alias": "narrowMatch",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "narrowMatch",
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Class_closeMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/closeMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#closeMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "closeMatch",
+      "domain": "Class",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "multivalued": true,
+      "alias": "closeMatch",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "closeMatch",
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Class_subClassOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/subClassOf",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "subClassOf",
+      "domain": "Class",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "multivalued": true,
+      "alias": "subClassOf",
+      "owner": "Class",
+      "domain_of": [
+        "Class"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "subClassOf",
+      "range": "Class",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Property_label",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/label",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ],
+      "comments": [
+        "SHOULD follow OBO label guidelines",
+        "MUST be unique within an ontology",
+        "SHOULD be unique across OBO"
+      ],
+      "in_subset": [
+        "allotrope_required_profile",
+        "go_required_profile",
+        "obi_required_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "label",
+      "domain": "Property",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "alias": "label",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "label",
+      "range": "label_type",
+      "recommended": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Property_definition",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/definition",
+      "mappings": [
+        "http://purl.obolibrary.org/obo/IAO_0000115"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#definition"
+      ],
+      "comments": [
+        "SHOULD be in Aristotelian (genus-differentia) form"
+      ],
+      "in_subset": [
+        "allotrope_required_profile",
+        "go_required_profile",
+        "obi_required_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "definition",
+      "domain": "Property",
+      "slot_uri": "http://purl.obolibrary.org/obo/IAO_0000115",
+      "multivalued": true,
+      "alias": "definition",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "definition",
+      "range": "narrative_text",
+      "recommended": true,
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Property_broadMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/broadMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#broadMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "broadMatch",
+      "domain": "Property",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#broadMatch",
+      "multivalued": true,
+      "alias": "broadMatch",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "broadMatch",
+      "range": "Property",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Property_exactMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/exactMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#exactMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "exactMatch",
+      "domain": "Property",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#exactMatch",
+      "multivalued": true,
+      "alias": "exactMatch",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "exactMatch",
+      "range": "Property",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Property_narrowMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/narrowMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#narrowMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "narrowMatch",
+      "domain": "Property",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+      "multivalued": true,
+      "alias": "narrowMatch",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "narrowMatch",
+      "range": "Property",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Property_closeMatch",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/closeMatch",
+      "mappings": [
+        "http://www.w3.org/2004/02/skos/core#closeMatch"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "closeMatch",
+      "domain": "Property",
+      "slot_uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+      "multivalued": true,
+      "alias": "closeMatch",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "closeMatch",
+      "range": "Property",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Property_subClassOf",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/subClassOf",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "subClassOf",
+      "domain": "Property",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      "multivalued": true,
+      "alias": "subClassOf",
+      "owner": "Property",
+      "domain_of": [
+        "Property"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "subClassOf",
+      "range": "Property",
+      "@type": "SlotDefinition"
+    },
+    {
+      "name": "Axiom_database_cross_reference",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/database_cross_reference",
+      "mappings": [
+        "http://www.geneontology.org/formats/oboInOwl#hasDbXref"
+      ],
+      "exact_mappings": [
+        "http://purl.org/dc/terms/source"
+      ],
+      "description": "Uses to indicate the source of an axiom",
+      "in_subset": [
+        "go_permitted_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "database_cross_reference",
+      "domain": "Axiom",
+      "slot_uri": "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+      "multivalued": true,
+      "alias": "database_cross_reference",
+      "owner": "Axiom",
+      "domain_of": [
+        "Axiom"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "database_cross_reference",
+      "range": "CURIELiteral",
+      "@type": "SlotDefinition"
+    }
+  ],
+  "classes": [
+    {
+      "name": "Any",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Any",
+      "mappings": [
+        "linkml:Any"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slot_usage": {},
+      "class_uri": "https://w3id.org/linkml/Any",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AnnotationPropertyMixin",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/AnnotationPropertyMixin",
+      "description": "Groups all annotation property bundles",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "mixin": true,
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/AnnotationPropertyMixin",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HasMinimalMetadata",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/HasMinimalMetadata",
+      "description": "Absolute minimum metadata model",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationPropertyMixin",
+      "mixin": true,
+      "slots": [
+        "label",
+        "definition"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/HasMinimalMetadata",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HasSynonyms",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/HasSynonyms",
+      "description": "a mixin for a class whose members can have synonyms",
+      "comments": [
+        "the GO-style synonym model has four distinct scopes, with additional types as annotation axioms",
+        "the OBI synonym model is to use alternative_term, or potentially a subproperty"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationPropertyMixin",
+      "mixin": true,
+      "slots": [
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/HasSynonyms",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HasMappings",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/HasMappings",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationPropertyMixin",
+      "mixin": true,
+      "slots": [
+        "broadMatch",
+        "closeMatch",
+        "exactMatch",
+        "narrowMatch",
+        "database_cross_reference"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/HasMappings",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HasProvenance",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/HasProvenance",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationPropertyMixin",
+      "mixin": true,
+      "slots": [
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/HasProvenance",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HasLifeCycle",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/HasLifeCycle",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationPropertyMixin",
+      "mixin": true,
+      "slots": [
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/HasLifeCycle",
+      "rules": [
+        {
+          "preconditions": {
+            "slot_conditions": [
+              {
+                "name": "deprecated",
+                "equals_expression": "true",
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "postconditions": {
+            "any_of": [
+              {
+                "slot_conditions": [
+                  {
+                    "name": "term_replaced_by",
+                    "required": true,
+                    "@type": "SlotDefinition"
+                  }
+                ],
+                "@type": "AnonymousClassExpression"
+              },
+              {
+                "slot_conditions": [
+                  {
+                    "name": "consider",
+                    "required": true,
+                    "@type": "SlotDefinition"
+                  }
+                ],
+                "@type": "AnonymousClassExpression"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "description": "if a term is deprecated it should have either consider or replaced by",
+          "@type": "ClassRule"
+        },
+        {
+          "preconditions": {
+            "none_of": [
+              {
+                "slot_conditions": [
+                  {
+                    "name": "deprecated",
+                    "equals_expression": "true",
+                    "@type": "SlotDefinition"
+                  }
+                ],
+                "@type": "AnonymousClassExpression"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "postconditions": {
+            "none_of": [
+              {
+                "slot_conditions": [
+                  {
+                    "name": "term_replaced_by",
+                    "required": true,
+                    "@type": "SlotDefinition"
+                  }
+                ],
+                "@type": "AnonymousClassExpression"
+              },
+              {
+                "slot_conditions": [
+                  {
+                    "name": "consider",
+                    "required": true,
+                    "@type": "SlotDefinition"
+                  }
+                ],
+                "@type": "AnonymousClassExpression"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "description": "if a term is not deprecated it should have neither consider nor replaced by",
+          "@type": "ClassRule"
+        },
+        {
+          "preconditions": {
+            "slot_conditions": [
+              {
+                "name": "deprecated",
+                "equals_expression": "true",
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "postconditions": {
+            "slot_conditions": [
+              {
+                "name": "label",
+                "pattern": "^obsolete ",
+                "@type": "SlotDefinition"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "description": "if a term is deprecated its label should start with the string obsolete",
+          "@type": "ClassRule"
+        }
+      ],
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HasCategory",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/HasCategory",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationPropertyMixin",
+      "mixin": true,
+      "slots": [
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/HasCategory",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "HasUserInformation",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/HasUserInformation",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationPropertyMixin",
+      "mixin": true,
+      "slots": [
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/HasUserInformation",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Thing",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Thing",
+      "mappings": [
+        "owl:Thing"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slots": [
+        "type"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#Thing",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NamedObject",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/NamedObject",
+      "aliases": [
+        "named entity",
+        "identified object",
+        "IRI"
+      ],
+      "description": "Anything with an IRI",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Thing",
+      "slots": [
+        "type",
+        "id"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/NamedObject",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Ontology",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Ontology",
+      "mappings": [
+        "owl:Ontology"
+      ],
+      "description": "An OWL ontology",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "NamedObject",
+      "slots": [
+        "type",
+        "id",
+        "Ontology_title",
+        "has_ontology_root_term",
+        "Ontology_license",
+        "source",
+        "Ontology_versionIRI",
+        "Ontology_versionInfo",
+        "comment",
+        "creator",
+        "created",
+        "imports"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#Ontology",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Term",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Term",
+      "aliases": [
+        "term"
+      ],
+      "description": "A NamedThing that includes classes, properties, but not ontologies",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "NamedObject",
+      "abstract": true,
+      "mixins": [
+        "HasSynonyms",
+        "HasLifeCycle",
+        "HasProvenance",
+        "HasMappings",
+        "HasCategory",
+        "HasUserInformation",
+        "HasMinimalMetadata"
+      ],
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "broadMatch",
+        "closeMatch",
+        "exactMatch",
+        "narrowMatch",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "label",
+        "definition"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/Term",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Class",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Class",
+      "aliases": [
+        "term",
+        "concept"
+      ],
+      "mappings": [
+        "owl:Class"
+      ],
+      "close_mappings": [
+        "skos:Concept"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Term",
+      "mixins": [
+        "ClassExpression"
+      ],
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "never_in_taxon",
+        "disconnected_from",
+        "has_rank",
+        "Class_label",
+        "Class_definition",
+        "Class_broadMatch",
+        "Class_exactMatch",
+        "Class_narrowMatch",
+        "Class_closeMatch",
+        "Class_subClassOf",
+        "disjointWith",
+        "equivalentClass",
+        "intersectionOf",
+        "cardinality",
+        "complementOf",
+        "oneOf",
+        "unionOf"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#Class",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Property",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Property",
+      "mappings": [
+        "rdf:Property"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Term",
+      "abstract": true,
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "domain",
+        "range",
+        "is_class_level",
+        "is_metadata_tag",
+        "Property_label",
+        "Property_definition",
+        "Property_broadMatch",
+        "Property_exactMatch",
+        "Property_narrowMatch",
+        "Property_closeMatch",
+        "Property_subClassOf"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AnnotationProperty",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/AnnotationProperty",
+      "mappings": [
+        "owl:AnnotationProperty"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Property",
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "domain",
+        "range",
+        "is_class_level",
+        "is_metadata_tag",
+        "Property_label",
+        "Property_definition",
+        "Property_broadMatch",
+        "Property_exactMatch",
+        "Property_narrowMatch",
+        "Property_closeMatch",
+        "Property_subClassOf",
+        "shorthand"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#AnnotationProperty",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ObjectProperty",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/ObjectProperty",
+      "mappings": [
+        "owl:ObjectProperty"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Property",
+      "mixins": [
+        "PropertyExpression"
+      ],
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "domain",
+        "range",
+        "is_class_level",
+        "is_metadata_tag",
+        "Property_label",
+        "Property_definition",
+        "Property_broadMatch",
+        "Property_exactMatch",
+        "Property_narrowMatch",
+        "Property_closeMatch",
+        "Property_subClassOf",
+        "temporal_interpretation",
+        "is_cyclic",
+        "is_transitive",
+        "shorthand",
+        "equivalentProperty",
+        "inverseOf",
+        "propertyChainAxiom",
+        "disjointWith"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "TransitiveProperty",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/TransitiveProperty",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "ObjectProperty",
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "domain",
+        "range",
+        "is_class_level",
+        "is_metadata_tag",
+        "Property_label",
+        "Property_definition",
+        "Property_broadMatch",
+        "Property_exactMatch",
+        "Property_narrowMatch",
+        "Property_closeMatch",
+        "Property_subClassOf",
+        "temporal_interpretation",
+        "is_cyclic",
+        "is_transitive",
+        "shorthand",
+        "equivalentProperty",
+        "inverseOf",
+        "propertyChainAxiom",
+        "disjointWith"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/TransitiveProperty",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NamedIndividual",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/NamedIndividual",
+      "mappings": [
+        "owl:NamedIndividual"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Term",
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "broadMatch",
+        "closeMatch",
+        "exactMatch",
+        "narrowMatch",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "label",
+        "definition"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#NamedIndividual",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Axiom",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Axiom",
+      "mappings": [
+        "owl:Axiom"
+      ],
+      "exact_mappings": [
+        "rdf:Statement"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "slots": [
+        "annotatedProperty",
+        "annotatedSource",
+        "annotatedTarget",
+        "source",
+        "is_inferred",
+        "notes",
+        "url",
+        "has_axiom_label",
+        "is_a_defining_property_chain_axiom",
+        "is_a_defining_property_chain_axiom_where_second_argument_is_reflexive",
+        "created_by",
+        "date_retrieved",
+        "evidence",
+        "external_ontology",
+        "Axiom_database_cross_reference",
+        "has_exact_synonym",
+        "has_synonym_type",
+        "comment",
+        "label",
+        "seeAlso"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#Axiom",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Subset",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Subset",
+      "mappings": [
+        "oio:Subset"
+      ],
+      "description": "A collection of terms grouped for some purpose",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnnotationProperty",
+      "slots": [
+        "type",
+        "id",
+        "has_exact_synonym",
+        "has_narrow_synonym",
+        "has_broad_synonym",
+        "has_related_synonym",
+        "alternative_term",
+        "ISA_alternative_term",
+        "IEDB_alternative_term",
+        "editor_preferred_term",
+        "OBO_foundry_unique_label",
+        "deprecated",
+        "has_obsolescence_reason",
+        "term_replaced_by",
+        "consider",
+        "has_alternative_id",
+        "excluded_from_QC_check",
+        "excluded_subClassOf",
+        "excluded_synonym",
+        "should_conform_to",
+        "created_by",
+        "creation_date",
+        "contributor",
+        "creator",
+        "created",
+        "date",
+        "isDefinedBy",
+        "editor_note",
+        "term_editor",
+        "definition_source",
+        "ontology_term_requester",
+        "imported_from",
+        "term_tracker_item",
+        "database_cross_reference",
+        "has_obo_namespace",
+        "category",
+        "in_subset",
+        "conformsTo",
+        "comment",
+        "seeAlso",
+        "image",
+        "example_of_usage",
+        "curator_note",
+        "has_curation_status",
+        "depicted_by",
+        "page",
+        "domain",
+        "range",
+        "is_class_level",
+        "is_metadata_tag",
+        "Property_label",
+        "Property_definition",
+        "Property_broadMatch",
+        "Property_exactMatch",
+        "Property_narrowMatch",
+        "Property_closeMatch",
+        "Property_subClassOf",
+        "shorthand"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.geneontology.org/formats/oboInOwl#Subset",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Anonymous",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Anonymous",
+      "description": "Abstract root class for all anonymous (non-named; lacking an identifier) expressions",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "abstract": true,
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/Anonymous",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "AnonymousClassExpression",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/AnonymousClassExpression",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Anonymous",
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/AnonymousClassExpression",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Restriction",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Restriction",
+      "mappings": [
+        "owl:Restriction"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "AnonymousClassExpression",
+      "mixin": true,
+      "mixins": [
+        "ClassExpression"
+      ],
+      "slots": [
+        "onProperty",
+        "someValuesFrom",
+        "allValuesFrom",
+        "disjointWith",
+        "equivalentClass",
+        "intersectionOf",
+        "subClassOf",
+        "cardinality",
+        "complementOf",
+        "oneOf",
+        "unionOf"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://www.w3.org/2002/07/owl#Restriction",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "Expression",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/Expression",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "mixin": true,
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/Expression",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "ClassExpression",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/ClassExpression",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Expression",
+      "mixin": true,
+      "slots": [
+        "disjointWith",
+        "equivalentClass",
+        "intersectionOf",
+        "subClassOf",
+        "cardinality",
+        "complementOf",
+        "oneOf",
+        "unionOf"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/ClassExpression",
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "PropertyExpression",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/PropertyExpression",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "Expression",
+      "mixin": true,
+      "slots": [
+        "disjointWith"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/PropertyExpression",
+      "@type": "ClassDefinition"
+    }
+  ],
+  "metamodel_version": "1.7.0",
+  "source_file": "obo_metadata.yaml",
+  "source_file_date": "2022-04-10T13:33:12",
+  "source_file_size": 25933,
+  "generation_date": "2022-04-10T13:33:19",
+  "@type": "SchemaDefinition",
+  "@context": [
+    "project/jsonld/obo_metadata.context.jsonld",
+    "https://w3id.org/linkml/types.context.jsonld",
+    {
+      "@base": "http://purl.obolibrary.org/obo/schema/"
+    }
+  ]
+}

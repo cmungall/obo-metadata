@@ -1,0 +1,496 @@
+BASE <http://purl.obolibrary.org/obo/schema/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX RO: <http://purl.obolibrary.org/obo/RO_>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+PREFIX OBI: <http://purl.obolibrary.org/obo/OBI_>
+PREFIX linkml: <https://w3id.org/linkml/>
+PREFIX biolink: <https://w3id.org/biolink/vocab/>
+PREFIX sdo: <http://schema.org/>
+PREFIX dc1: <http://purl.org/dc/terms/>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+
+
+<IriType> IRI
+
+<CURIELiteral> xsd:string
+
+<URLLiteral> xsd:string
+
+<LabelType> xsd:string
+
+<NarrativeText> xsd:string
+
+linkml:String xsd:string
+
+linkml:Integer xsd:integer
+
+linkml:Boolean xsd:boolean
+
+linkml:Float xsd:float
+
+linkml:Double xsd:double
+
+linkml:Decimal xsd:decimal
+
+linkml:Time xsd:dateTime
+
+linkml:Date xsd:date
+
+linkml:Datetime xsd:dateTime
+
+linkml:Uriorcurie IRI
+
+linkml:Uri IRI
+
+linkml:Ncname xsd:string
+
+linkml:Objectidentifier IRI
+
+linkml:Nodeidentifier NONLITERAL
+
+<AnnotationProperty>  (
+    CLOSED {
+       (  $<AnnotationProperty_tes> (  &<Property_tes> ;
+             rdf:type [ rdf:Property ] ? ;
+             oboInOwl:shorthand @linkml:String *
+          ) ;
+          rdf:type [ owl:AnnotationProperty ]
+       )
+    } OR @<Subset>
+)
+
+<AnnotationPropertyMixin>  (
+    @<HasCategory> OR @<HasLifeCycle> OR @<HasMappings> OR @<HasMinimalMetadata> OR @<HasProvenance> OR @<HasSynonyms> OR
+    @<HasUserInformation>
+)
+
+<AnnotationPropertyMixin_struct> {
+    (  $<AnnotationPropertyMixin_tes> rdf:type . * ;
+       rdf:type [ <AnnotationPropertyMixin> ] ?
+    )
+}
+
+<Anonymous>  (
+    {
+       (  $<Anonymous_tes> rdf:type . * ;
+          rdf:type [ <Anonymous> ] ?
+       )
+    } OR @<AnonymousClassExpression>
+)
+
+<AnonymousClassExpression>  (
+    CLOSED {
+       (  $<AnonymousClassExpression_tes> (  &<Anonymous_tes> ;
+             rdf:type [ <Anonymous> ] ?
+          ) ;
+          rdf:type [ <AnonymousClassExpression> ] ?
+       )
+    } OR @<Restriction>
+)
+
+<Any> CLOSED {
+    (  $<Any_tes> rdf:type . * ;
+       rdf:type [ linkml:Any ] ?
+    )
+}
+
+<Axiom> CLOSED {
+    (  $<Axiom_tes> (  owl:annotatedProperty @<AnnotationProperty> ? ;
+          owl:annotatedSource @<Thing> ? ;
+          owl:annotatedTarget @<Any> ? ;
+          dc1:source @linkml:String * ;
+          oboInOwl:is_inferred @linkml:Boolean ? ;
+          oboInOwl:notes @linkml:String * ;
+          oboInOwl:url @linkml:String ? ;
+          IAO:0010000 @<Thing> ? ;
+          RO:0002581 @linkml:String ? ;
+          RO:0002582 @linkml:String ? ;
+          oboInOwl:created_by @linkml:String ? ;
+          oboInOwl:date_retrieved @linkml:String ? ;
+          oboInOwl:evidence @linkml:String ? ;
+          oboInOwl:external_ontology @linkml:String * ;
+          oboInOwl:hasDbXref @<CURIELiteral> * ;
+          oboInOwl:hasExactSynonym @<LabelType> * ;
+          oboInOwl:hasSynonymType @<AnnotationProperty> * ;
+          rdfs:comment @linkml:String * ;
+          rdfs:label @<LabelType> ? ;
+          rdfs:seeAlso @<Thing> *
+       ) ;
+       rdf:type [ owl:Axiom ] ?
+    )
+}
+
+<Class> CLOSED {
+    (  $<Class_tes> (  &<Term_tes> ;
+          rdf:type [ <Term> ] ? ;
+          &<ClassExpression_tes> ;
+          rdf:type [ <ClassExpression> ] ? ;
+          RO:0002161 @<Class> * ;
+          <disconnected_from> @<Class> ? ;
+          <has_rank> @<Thing> ? ;
+          rdfs:label @<LabelType> ;
+          IAO:0000115 @<NarrativeText> * ;
+          skos:broadMatch @<Class> * ;
+          skos:exactMatch @<Class> * ;
+          skos:narrowMatch @<Class> * ;
+          skos:closeMatch @<Class> * ;
+          rdfs:subClassOf @<Class> * ;
+          owl:disjointWith @linkml:String * ;
+          owl:equivalentClass @linkml:String * ;
+          owl:intersectionOf @linkml:String ? ;
+          owl:cardinality @linkml:String ? ;
+          owl:complementOf @linkml:String ? ;
+          owl:oneOf @<ClassExpression> ? ;
+          owl:unionOf @linkml:String ?
+       ) ;
+       rdf:type [ owl:Class ]
+    )
+}
+
+<ClassExpression> {
+    (  $<ClassExpression_tes> (  &<Expression_tes> ;
+          rdf:type [ <Expression> ] ? ;
+          owl:disjointWith @linkml:String * ;
+          owl:equivalentClass @linkml:String * ;
+          owl:intersectionOf @linkml:String ? ;
+          rdfs:subClassOf @<ClassExpression> * ;
+          owl:cardinality @linkml:String ? ;
+          owl:complementOf @linkml:String ? ;
+          owl:oneOf @<ClassExpression> ? ;
+          owl:unionOf @linkml:String ?
+       ) ;
+       rdf:type [ <ClassExpression> ] ?
+    )
+}
+
+<Expression>  (
+    @<ClassExpression> OR @<PropertyExpression>
+)
+
+<Expression_struct> {
+    (  $<Expression_tes> rdf:type . * ;
+       rdf:type [ <Expression> ] ?
+    )
+}
+
+<HasCategory> {
+    (  $<HasCategory_tes> (  &<AnnotationPropertyMixin_tes> ;
+          rdf:type [ <AnnotationPropertyMixin> ] ? ;
+          oboInOwl:hasOBONamespace @linkml:String * ;
+          biolink:category @linkml:String ? ;
+          oboInOwl:inSubset @<Subset> * ;
+          dc1:conformsTo @<Thing> *
+       ) ;
+       rdf:type [ <HasCategory> ] ?
+    )
+}
+
+<HasLifeCycle> {
+    (  $<HasLifeCycle_tes> (  &<AnnotationPropertyMixin_tes> ;
+          rdf:type [ <AnnotationPropertyMixin> ] ? ;
+          owl:deprecated @linkml:Boolean ? ;
+          IAO:0000231 @linkml:String ? ;
+          IAO:0100001 @<Thing> ? ;
+          oboInOwl:consider @linkml:String * ;
+          oboInOwl:hasAlternativeId @linkml:Uriorcurie * ;
+          <excluded_from_QC_check> @<Thing> ? ;
+          <excluded_subClassOf> @<Class> * ;
+          <excluded_synonym> @linkml:String * ;
+          <should_conform_to> @<Thing> ?
+       ) ;
+       rdf:type [ <HasLifeCycle> ] ?
+    )
+}
+
+<HasMappings> {
+    (  $<HasMappings_tes> (  &<AnnotationPropertyMixin_tes> ;
+          rdf:type [ <AnnotationPropertyMixin> ] ? ;
+          skos:broadMatch @<Thing> * ;
+          skos:closeMatch @<Thing> * ;
+          skos:exactMatch @<Thing> * ;
+          skos:narrowMatch @<Thing> * ;
+          oboInOwl:hasDbXref @<CURIELiteral> *
+       ) ;
+       rdf:type [ <HasMappings> ] ?
+    )
+}
+
+<HasMinimalMetadata> {
+    (  $<HasMinimalMetadata_tes> (  &<AnnotationPropertyMixin_tes> ;
+          rdf:type [ <AnnotationPropertyMixin> ] ? ;
+          rdfs:label @<LabelType> ? ;
+          IAO:0000115 @<NarrativeText> *
+       ) ;
+       rdf:type [ <HasMinimalMetadata> ] ?
+    )
+}
+
+<HasProvenance> {
+    (  $<HasProvenance_tes> (  &<AnnotationPropertyMixin_tes> ;
+          rdf:type [ <AnnotationPropertyMixin> ] ? ;
+          oboInOwl:created_by @linkml:String ? ;
+          oboInOwl:creation_date @linkml:String * ;
+          dc1:contributor @<Thing> * ;
+          dc1:creator @linkml:String * ;
+          dc1:created @linkml:String ? ;
+          dc1:date @linkml:String * ;
+          rdfs:isDefinedBy @<Ontology> ? ;
+          IAO:0000116 @<NarrativeText> * ;
+          IAO:0000117 @linkml:String * ;
+          IAO:0000119 @linkml:String * ;
+          IAO:0000234 @linkml:String ? ;
+          IAO:0000412 @<NamedIndividual> * ;
+          IAO:0000233 @linkml:String *
+       ) ;
+       rdf:type [ <HasProvenance> ] ?
+    )
+}
+
+<HasSynonyms> {
+    (  $<HasSynonyms_tes> (  &<AnnotationPropertyMixin_tes> ;
+          rdf:type [ <AnnotationPropertyMixin> ] ? ;
+          oboInOwl:hasExactSynonym @<LabelType> * ;
+          oboInOwl:hasNarrowSynonym @<LabelType> * ;
+          oboInOwl:hasBroadSynonym @<LabelType> * ;
+          oboInOwl:hasRelatedSynonym @<LabelType> * ;
+          IAO:0000118 @linkml:String * ;
+          OBI:0001847 @linkml:String * ;
+          OBI:9991118 @linkml:String * ;
+          IAO:0000111 @linkml:String * ;
+          IAO:0000589 @linkml:String *
+       ) ;
+       rdf:type [ <HasSynonyms> ] ?
+    )
+}
+
+<HasUserInformation> {
+    (  $<HasUserInformation_tes> (  &<AnnotationPropertyMixin_tes> ;
+          rdf:type [ <AnnotationPropertyMixin> ] ? ;
+          rdfs:comment @linkml:String * ;
+          rdfs:seeAlso @<Thing> * ;
+          sdo:image @<Thing> ? ;
+          IAO:0000112 @linkml:String * ;
+          IAO:0000232 @linkml:String * ;
+          IAO:0000114 @linkml:String ? ;
+          foaf:depicted_by @linkml:String * ;
+          foaf:page @linkml:String *
+       ) ;
+       rdf:type [ <HasUserInformation> ] ?
+    )
+}
+
+<NamedIndividual> CLOSED {
+    (  $<NamedIndividual_tes> (  &<Term_tes> ;
+          rdf:type [ <Term> ] ?
+       ) ;
+       rdf:type [ owl:NamedIndividual ]
+    )
+}
+
+<NamedObject>  (
+    CLOSED {
+       (  $<NamedObject_tes> (  &<Thing_tes> ;
+             rdf:type [ owl:Thing ] ?
+          ) ;
+          rdf:type [ <NamedObject> ]
+       )
+    } OR @<Ontology> OR @<Term>
+)
+
+<ObjectProperty>  (
+    CLOSED {
+       (  $<ObjectProperty_tes> (  &<Property_tes> ;
+             rdf:type [ rdf:Property ] ? ;
+             &<PropertyExpression_tes> ;
+             rdf:type [ <PropertyExpression> ] ? ;
+             RO:0001900 @<NamedIndividual> ? ;
+             oboInOwl:is_cyclic @linkml:Boolean ? ;
+             oboInOwl:is_transitive @linkml:Boolean ? ;
+             oboInOwl:shorthand @linkml:String * ;
+             owl:equivalentProperty @<Thing> * ;
+             owl:inverseOf @linkml:String ? ;
+             owl:propertyChainAxiom @linkml:String * ;
+             owl:disjointWith @linkml:String *
+          ) ;
+          rdf:type [ owl:ObjectProperty ]
+       )
+    } OR @<TransitiveProperty>
+)
+
+<Ontology> CLOSED {
+    (  $<Ontology_tes> (  &<NamedObject_tes> ;
+          rdf:type [ <NamedObject> ] ? ;
+          dc1:title @<NarrativeText> ;
+          IAO:0000700 @<Class> * ;
+          dc1:license @<Thing> ;
+          dc1:source @linkml:String * ;
+          owl:versionIRI @linkml:Uriorcurie ;
+          owl:versionInfo @linkml:String ;
+          rdfs:comment @linkml:String * ;
+          dc1:creator @linkml:String * ;
+          dc1:created @linkml:String ? ;
+          owl:imports @linkml:String ?
+       ) ;
+       rdf:type [ owl:Ontology ]
+    )
+}
+
+<Property>  (
+    @<AnnotationProperty> OR @<ObjectProperty>
+)
+
+<Property_struct> {
+    (  $<Property_tes> (  &<Term_tes> ;
+          rdf:type [ <Term> ] ? ;
+          rdfs:domain @linkml:String * ;
+          rdfs:range @linkml:String * ;
+          oboInOwl:is_class_level @linkml:Boolean ? ;
+          oboInOwl:is_metadata_tag @linkml:Boolean ? ;
+          rdfs:label @<LabelType> ? ;
+          IAO:0000115 @<NarrativeText> * ;
+          skos:broadMatch @<Property> * ;
+          skos:exactMatch @<Property> * ;
+          skos:narrowMatch @<Property> * ;
+          skos:closeMatch @<Property> * ;
+          rdfs:subClassOf @<Property> *
+       ) ;
+       rdf:type [ rdf:Property ]
+    )
+}
+
+<PropertyExpression> {
+    (  $<PropertyExpression_tes> (  &<Expression_tes> ;
+          rdf:type [ <Expression> ] ? ;
+          owl:disjointWith @linkml:String *
+       ) ;
+       rdf:type [ <PropertyExpression> ] ?
+    )
+}
+
+<Restriction> {
+    (  $<Restriction_tes> (  &<AnonymousClassExpression_tes> ;
+          rdf:type [ <AnonymousClassExpression> ] ? ;
+          &<ClassExpression_tes> ;
+          rdf:type [ <ClassExpression> ] ? ;
+          owl:onProperty @<PropertyExpression> * ;
+          owl:someValuesFrom @linkml:String * ;
+          owl:allValuesFrom @linkml:String ? ;
+          owl:disjointWith @linkml:String * ;
+          owl:equivalentClass @linkml:String * ;
+          owl:intersectionOf @linkml:String ? ;
+          rdfs:subClassOf @<ClassExpression> * ;
+          owl:cardinality @linkml:String ? ;
+          owl:complementOf @linkml:String ? ;
+          owl:oneOf @<ClassExpression> ? ;
+          owl:unionOf @linkml:String ?
+       ) ;
+       rdf:type [ owl:Restriction ] ?
+    )
+}
+
+<Subset> CLOSED {
+    (  $<Subset_tes> (  &<AnnotationProperty_tes> ;
+          rdf:type [ owl:AnnotationProperty ] ?
+       ) ;
+       rdf:type [ oboInOwl:Subset ]
+    )
+}
+
+<Term>  (
+    @<Class> OR @<NamedIndividual> OR @<Property>
+)
+
+<Term_struct> {
+    (  $<Term_tes> (  &<NamedObject_tes> ;
+          rdf:type [ <NamedObject> ] ? ;
+          &<HasSynonyms_tes> ;
+          rdf:type [ <HasSynonyms> ] ? ;
+          &<HasLifeCycle_tes> ;
+          rdf:type [ <HasLifeCycle> ] ? ;
+          &<HasProvenance_tes> ;
+          rdf:type [ <HasProvenance> ] ? ;
+          &<HasMappings_tes> ;
+          rdf:type [ <HasMappings> ] ? ;
+          &<HasCategory_tes> ;
+          rdf:type [ <HasCategory> ] ? ;
+          &<HasUserInformation_tes> ;
+          rdf:type [ <HasUserInformation> ] ? ;
+          &<HasMinimalMetadata_tes> ;
+          rdf:type [ <HasMinimalMetadata> ] ? ;
+          oboInOwl:hasExactSynonym @<LabelType> * ;
+          oboInOwl:hasNarrowSynonym @<LabelType> * ;
+          oboInOwl:hasBroadSynonym @<LabelType> * ;
+          oboInOwl:hasRelatedSynonym @<LabelType> * ;
+          IAO:0000118 @linkml:String * ;
+          OBI:0001847 @linkml:String * ;
+          OBI:9991118 @linkml:String * ;
+          IAO:0000111 @linkml:String * ;
+          IAO:0000589 @linkml:String * ;
+          owl:deprecated @linkml:Boolean ? ;
+          IAO:0000231 @linkml:String ? ;
+          IAO:0100001 @<Thing> ? ;
+          oboInOwl:consider @linkml:String * ;
+          oboInOwl:hasAlternativeId @linkml:Uriorcurie * ;
+          <excluded_from_QC_check> @<Thing> ? ;
+          <excluded_subClassOf> @<Class> * ;
+          <excluded_synonym> @linkml:String * ;
+          <should_conform_to> @<Thing> ? ;
+          oboInOwl:created_by @linkml:String ? ;
+          oboInOwl:creation_date @linkml:String * ;
+          dc1:contributor @<Thing> * ;
+          dc1:creator @linkml:String * ;
+          dc1:created @linkml:String ? ;
+          dc1:date @linkml:String * ;
+          rdfs:isDefinedBy @<Ontology> ? ;
+          IAO:0000116 @<NarrativeText> * ;
+          IAO:0000117 @linkml:String * ;
+          IAO:0000119 @linkml:String * ;
+          IAO:0000234 @linkml:String ? ;
+          IAO:0000412 @<NamedIndividual> * ;
+          IAO:0000233 @linkml:String * ;
+          skos:broadMatch @<Thing> * ;
+          skos:closeMatch @<Thing> * ;
+          skos:exactMatch @<Thing> * ;
+          skos:narrowMatch @<Thing> * ;
+          oboInOwl:hasDbXref @<CURIELiteral> * ;
+          oboInOwl:hasOBONamespace @linkml:String * ;
+          biolink:category @linkml:String ? ;
+          oboInOwl:inSubset @<Subset> * ;
+          dc1:conformsTo @<Thing> * ;
+          rdfs:comment @linkml:String * ;
+          rdfs:seeAlso @<Thing> * ;
+          sdo:image @<Thing> ? ;
+          IAO:0000112 @linkml:String * ;
+          IAO:0000232 @linkml:String * ;
+          IAO:0000114 @linkml:String ? ;
+          foaf:depicted_by @linkml:String * ;
+          foaf:page @linkml:String * ;
+          rdfs:label @<LabelType> ? ;
+          IAO:0000115 @<NarrativeText> *
+       ) ;
+       rdf:type [ <Term> ]
+    )
+}
+
+<Thing>  (
+    {
+       (  $<Thing_tes> rdf:type @linkml:Uriorcurie * ;
+          rdf:type [ owl:Thing ] ?
+       )
+    } OR @<NamedObject>
+)
+
+<TransitiveProperty> CLOSED {
+    (  $<TransitiveProperty_tes> (  &<ObjectProperty_tes> ;
+          rdf:type [ owl:ObjectProperty ] ?
+       ) ;
+       rdf:type [ <TransitiveProperty> ]
+    )
+}
+
+

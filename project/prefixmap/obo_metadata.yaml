@@ -1,0 +1,56 @@
+{
+   "IAO": "http://purl.obolibrary.org/obo/IAO_",
+   "NCIT": "http://purl.obolibrary.org/obo/NCIT_",
+   "OBI": "http://purl.obolibrary.org/obo/OBI_",
+   "OIO": "http://www.geneontology.org/formats/oboInOwl#",
+   "OMO": "http://purl.obolibrary.org/obo/OMO_",
+   "RO": "http://purl.obolibrary.org/obo/RO_",
+   "biolink": "https://w3id.org/biolink/vocab/",
+   "dcterms": "http://purl.org/dc/terms/",
+   "foaf": "http://xmlns.com/foaf/0.1/",
+   "linkml": "https://w3id.org/linkml/",
+   "obo": "http://purl.obolibrary.org/obo/",
+   "oio": "http://www.geneontology.org/formats/oboInOwl#",
+   "omoschema": "http://purl.obolibrary.org/obo/schema/",
+   "owl": "http://www.w3.org/2002/07/owl#",
+   "pav": "http://purl.org/pav/",
+   "protege": "http://example.org/UNKNOWN/protege/",
+   "prov": "http://www.w3.org/ns/prov-o#",
+   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+   "sdo": "http://schema.org/",
+   "skos": "http://www.w3.org/2004/02/skos/core#",
+   "AnnotationProperty": {
+      "@id": "owl:AnnotationProperty"
+   },
+   "Any": {
+      "@id": "linkml:Any"
+   },
+   "Axiom": {
+      "@id": "owl:Axiom"
+   },
+   "Class": {
+      "@id": "owl:Class"
+   },
+   "NamedIndividual": {
+      "@id": "owl:NamedIndividual"
+   },
+   "ObjectProperty": {
+      "@id": "owl:ObjectProperty"
+   },
+   "Ontology": {
+      "@id": "owl:Ontology"
+   },
+   "Property": {
+      "@id": "rdf:Property"
+   },
+   "Restriction": {
+      "@id": "owl:Restriction"
+   },
+   "Subset": {
+      "@id": "oio:Subset"
+   },
+   "Thing": {
+      "@id": "owl:Thing"
+   }
+}

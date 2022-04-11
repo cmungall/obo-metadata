@@ -1,0 +1,451 @@
+{
+   "_comments": "Auto generated from obo_metadata.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-04-10T13:33:18\n    Schema: Ontology-Metadata\n    metamodel version: 1.7.0\n    model version: 0.0.1\n    \n    id: http://purl.obolibrary.org/obo/omo/schema\n    description: Schema for ontology metadata\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "@context": {
+      "IAO": {
+         "@id": "http://purl.obolibrary.org/obo/IAO_",
+         "@prefix": true
+      },
+      "NCIT": {
+         "@id": "http://purl.obolibrary.org/obo/NCIT_",
+         "@prefix": true
+      },
+      "OBI": {
+         "@id": "http://purl.obolibrary.org/obo/OBI_",
+         "@prefix": true
+      },
+      "OIO": "http://www.geneontology.org/formats/oboInOwl#",
+      "OMO": {
+         "@id": "http://purl.obolibrary.org/obo/OMO_",
+         "@prefix": true
+      },
+      "RO": {
+         "@id": "http://purl.obolibrary.org/obo/RO_",
+         "@prefix": true
+      },
+      "biolink": "https://w3id.org/biolink/vocab/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "linkml": "https://w3id.org/linkml/",
+      "obo": "http://purl.obolibrary.org/obo/",
+      "oio": "http://www.geneontology.org/formats/oboInOwl#",
+      "omoschema": "http://purl.obolibrary.org/obo/schema/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "pav": "http://purl.org/pav/",
+      "protege": "http://example.org/UNKNOWN/protege/",
+      "prov": "http://www.w3.org/ns/prov-o#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "sdo": "http://schema.org/",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "@vocab": "http://purl.obolibrary.org/obo/schema/",
+      "allValuesFrom": {
+         "@id": "owl:allValuesFrom"
+      },
+      "alternative_term": {
+         "@id": "IAO:0000118"
+      },
+      "annotatedProperty": {
+         "@type": "@id",
+         "@id": "owl:annotatedProperty"
+      },
+      "annotatedSource": {
+         "@type": "@id",
+         "@id": "owl:annotatedSource"
+      },
+      "annotatedTarget": {
+         "@type": "@id",
+         "@id": "owl:annotatedTarget"
+      },
+      "broadMatch": {
+         "@type": "@id",
+         "@id": "skos:broadMatch"
+      },
+      "cardinality": {
+         "@id": "owl:cardinality"
+      },
+      "category": {
+         "@id": "biolink:category"
+      },
+      "changeNote": {
+         "@id": "skos:changeNote"
+      },
+      "closeMatch": {
+         "@type": "@id",
+         "@id": "skos:closeMatch"
+      },
+      "comment": {
+         "@id": "rdfs:comment"
+      },
+      "complementOf": {
+         "@id": "owl:complementOf"
+      },
+      "conformsTo": {
+         "@type": "@id",
+         "@id": "dcterms:conformsTo"
+      },
+      "consider": {
+         "@id": "oio:consider"
+      },
+      "contributor": {
+         "@type": "@id",
+         "@id": "dcterms:contributor"
+      },
+      "created": {
+         "@id": "dcterms:created"
+      },
+      "created_by": {
+         "@id": "oio:created_by"
+      },
+      "creation_date": {
+         "@id": "oio:creation_date"
+      },
+      "creator": {
+         "@id": "dcterms:creator"
+      },
+      "curator_note": {
+         "@id": "IAO:0000232"
+      },
+      "database_cross_reference": {
+         "@id": "oio:hasDbXref"
+      },
+      "date": {
+         "@id": "dcterms:date"
+      },
+      "date_retrieved": {
+         "@id": "oio:date_retrieved"
+      },
+      "defaultLanguage": {
+         "@id": "protege:defaultLanguage"
+      },
+      "definition": {
+         "@id": "IAO:0000115"
+      },
+      "definition_source": {
+         "@id": "IAO:0000119"
+      },
+      "depicted_by": {
+         "@id": "foaf:depicted_by"
+      },
+      "deprecated": {
+         "@type": "xsd:boolean",
+         "@id": "owl:deprecated"
+      },
+      "disconnected_from": {
+         "@type": "@id"
+      },
+      "disjointWith": {
+         "@id": "owl:disjointWith"
+      },
+      "distinctMembers": {
+         "@type": "@id",
+         "@id": "owl:distinctMembers"
+      },
+      "domain": {
+         "@id": "rdfs:domain"
+      },
+      "editor_note": {
+         "@id": "IAO:0000116"
+      },
+      "editor_preferred_term": {
+         "@id": "IAO:0000111"
+      },
+      "equivalentClass": {
+         "@id": "owl:equivalentClass"
+      },
+      "equivalentProperty": {
+         "@type": "@id",
+         "@id": "owl:equivalentProperty"
+      },
+      "evidence": {
+         "@id": "oio:evidence"
+      },
+      "exactMatch": {
+         "@type": "@id",
+         "@id": "skos:exactMatch"
+      },
+      "example_of_usage": {
+         "@id": "IAO:0000112"
+      },
+      "excluded_from_QC_check": {
+         "@type": "@id"
+      },
+      "excluded_subClassOf": {
+         "@type": "@id"
+      },
+      "external_ontology": {
+         "@id": "oio:external_ontology"
+      },
+      "has_alternative_id": {
+         "@type": "@id",
+         "@id": "oio:hasAlternativeId"
+      },
+      "has_axiom_label": {
+         "@type": "@id",
+         "@id": "IAO:0010000"
+      },
+      "has_broad_synonym": {
+         "@id": "oio:hasBroadSynonym"
+      },
+      "has_curation_status": {
+         "@id": "IAO:0000114"
+      },
+      "has_exact_synonym": {
+         "@id": "oio:hasExactSynonym"
+      },
+      "has_narrow_synonym": {
+         "@id": "oio:hasNarrowSynonym"
+      },
+      "has_obo_namespace": {
+         "@id": "oio:hasOBONamespace"
+      },
+      "has_obsolescence_reason": {
+         "@id": "IAO:0000231"
+      },
+      "has_ontology_root_term": {
+         "@type": "@id",
+         "@id": "IAO:0000700"
+      },
+      "has_rank": {
+         "@type": "@id"
+      },
+      "has_related_synonym": {
+         "@id": "oio:hasRelatedSynonym"
+      },
+      "has_synonym_type": {
+         "@type": "@id",
+         "@id": "oio:hasSynonymType"
+      },
+      "hasValue": {
+         "@id": "owl:hasValue"
+      },
+      "id": "@id",
+      "IEDB_alternative_term": {
+         "@id": "OBI:9991118"
+      },
+      "image": {
+         "@type": "@id",
+         "@id": "sdo:image"
+      },
+      "imported_from": {
+         "@type": "@id",
+         "@id": "IAO:0000412"
+      },
+      "imports": {
+         "@id": "owl:imports"
+      },
+      "in_subset": {
+         "@type": "@id",
+         "@id": "oio:inSubset"
+      },
+      "intersectionOf": {
+         "@id": "owl:intersectionOf"
+      },
+      "inverseOf": {
+         "@id": "owl:inverseOf"
+      },
+      "is_a_defining_property_chain_axiom": {
+         "@id": "RO:0002581"
+      },
+      "is_a_defining_property_chain_axiom_where_second_argument_is_reflexive": {
+         "@id": "RO:0002582"
+      },
+      "is_class_level": {
+         "@type": "xsd:boolean",
+         "@id": "oio:is_class_level"
+      },
+      "is_cyclic": {
+         "@type": "xsd:boolean",
+         "@id": "oio:is_cyclic"
+      },
+      "is_inferred": {
+         "@type": "xsd:boolean",
+         "@id": "oio:is_inferred"
+      },
+      "is_metadata_tag": {
+         "@type": "xsd:boolean",
+         "@id": "oio:is_metadata_tag"
+      },
+      "is_transitive": {
+         "@type": "xsd:boolean",
+         "@id": "oio:is_transitive"
+      },
+      "ISA_alternative_term": {
+         "@id": "OBI:0001847"
+      },
+      "isDefinedBy": {
+         "@type": "@id",
+         "@id": "rdfs:isDefinedBy"
+      },
+      "label": {
+         "@id": "rdfs:label"
+      },
+      "license": {
+         "@type": "@id",
+         "@id": "dcterms:license"
+      },
+      "maxQualifiedCardinality": {
+         "@id": "owl:maxQualifiedCardinality"
+      },
+      "members": {
+         "@type": "@id",
+         "@id": "owl:members"
+      },
+      "minCardinality": {
+         "@type": "xsd:integer",
+         "@id": "owl:minCardinality"
+      },
+      "minQualifiedCardinality": {
+         "@type": "xsd:integer",
+         "@id": "owl:minQualifiedCardinality"
+      },
+      "narrowMatch": {
+         "@type": "@id",
+         "@id": "skos:narrowMatch"
+      },
+      "NCIT_definition_source": {
+         "@id": "NCIT:P378"
+      },
+      "NCIT_term_source": {
+         "@id": "NCIT:P384"
+      },
+      "NCIT_term_type": {
+         "@id": "NCIT:P383"
+      },
+      "never_in_taxon": {
+         "@type": "@id",
+         "@id": "RO:0002161"
+      },
+      "notes": {
+         "@id": "oio:notes"
+      },
+      "OBO_foundry_unique_label": {
+         "@id": "IAO:0000589"
+      },
+      "oboInOwl_id": {
+         "@id": "oio:id"
+      },
+      "oboInOwl_ontology": {
+         "@id": "oio:ontology"
+      },
+      "onClass": {
+         "@type": "@id",
+         "@id": "owl:onClass"
+      },
+      "oneOf": {
+         "@type": "@id",
+         "@id": "owl:oneOf"
+      },
+      "onProperty": {
+         "@type": "@id",
+         "@id": "owl:onProperty"
+      },
+      "ontology_term_requester": {
+         "@id": "IAO:0000234"
+      },
+      "page": {
+         "@id": "foaf:page"
+      },
+      "propertyChainAxiom": {
+         "@id": "owl:propertyChainAxiom"
+      },
+      "qualifiedCardinality": {
+         "@id": "owl:qualifiedCardinality"
+      },
+      "range": {
+         "@id": "rdfs:range"
+      },
+      "sameAs": {
+         "@id": "owl:sameAs"
+      },
+      "seeAlso": {
+         "@type": "@id",
+         "@id": "rdfs:seeAlso"
+      },
+      "shorthand": {
+         "@id": "oio:shorthand"
+      },
+      "should_conform_to": {
+         "@type": "@id"
+      },
+      "someValuesFrom": {
+         "@id": "owl:someValuesFrom"
+      },
+      "source": {
+         "@id": "dcterms:source"
+      },
+      "subClassOf": {
+         "@type": "@id",
+         "@id": "rdfs:subClassOf"
+      },
+      "synonym": {
+         "@id": "OIO:hasSynonym"
+      },
+      "temporal_interpretation": {
+         "@type": "@id",
+         "@id": "RO:0001900"
+      },
+      "term_editor": {
+         "@id": "IAO:0000117"
+      },
+      "term_replaced_by": {
+         "@type": "@id",
+         "@id": "IAO:0100001"
+      },
+      "term_tracker_item": {
+         "@id": "IAO:0000233"
+      },
+      "title": {
+         "@id": "dcterms:title"
+      },
+      "type": {
+         "@type": "@id",
+         "@id": "rdf:type"
+      },
+      "unionOf": {
+         "@id": "owl:unionOf"
+      },
+      "url": {
+         "@id": "oio:url"
+      },
+      "versionInfo": {
+         "@id": "owl:versionInfo"
+      },
+      "versionIRI": {
+         "@type": "@id",
+         "@id": "owl:versionIRI"
+      },
+      "AnnotationProperty": {
+         "@id": "owl:AnnotationProperty"
+      },
+      "Any": {
+         "@id": "linkml:Any"
+      },
+      "Axiom": {
+         "@id": "owl:Axiom"
+      },
+      "Class": {
+         "@id": "owl:Class"
+      },
+      "NamedIndividual": {
+         "@id": "owl:NamedIndividual"
+      },
+      "ObjectProperty": {
+         "@id": "owl:ObjectProperty"
+      },
+      "Ontology": {
+         "@id": "owl:Ontology"
+      },
+      "Property": {
+         "@id": "rdf:Property"
+      },
+      "Restriction": {
+         "@id": "owl:Restriction"
+      },
+      "Subset": {
+         "@id": "oio:Subset"
+      },
+      "Thing": {
+         "@id": "owl:Thing"
+      }
+   }
+}
