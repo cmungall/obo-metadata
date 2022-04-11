@@ -57,7 +57,7 @@
             },
             "consider": {
                "items": {
-                  "type": "string"
+                  "$ref": "#/$defs/Any"
                },
                "type": "array"
             },
@@ -294,7 +294,7 @@
                "type": "array"
             },
             "term_replaced_by": {
-               "$ref": "#/$defs/Thing"
+               "$ref": "#/$defs/Any"
             },
             "term_tracker_item": {
                "items": {
@@ -488,7 +488,7 @@
             },
             "consider": {
                "items": {
-                  "type": "string"
+                  "$ref": "#/$defs/Any"
                },
                "type": "array"
             },
@@ -731,7 +731,7 @@
                "type": "array"
             },
             "term_replaced_by": {
-               "$ref": "#/$defs/Thing"
+               "$ref": "#/$defs/Any"
             },
             "term_tracker_item": {
                "items": {
@@ -813,7 +813,7 @@
             },
             "consider": {
                "items": {
-                  "type": "string"
+                  "$ref": "#/$defs/Any"
                },
                "type": "array"
             },
@@ -1020,7 +1020,7 @@
                "type": "array"
             },
             "term_replaced_by": {
-               "$ref": "#/$defs/Thing"
+               "$ref": "#/$defs/Any"
             },
             "term_tracker_item": {
                "items": {
@@ -1119,7 +1119,7 @@
             },
             "consider": {
                "items": {
-                  "type": "string"
+                  "$ref": "#/$defs/Any"
                },
                "type": "array"
             },
@@ -1386,7 +1386,7 @@
                "type": "array"
             },
             "term_replaced_by": {
-               "$ref": "#/$defs/Thing"
+               "$ref": "#/$defs/Any"
             },
             "term_tracker_item": {
                "items": {
@@ -1532,7 +1532,7 @@
             },
             "consider": {
                "items": {
-                  "type": "string"
+                  "$ref": "#/$defs/Any"
                },
                "type": "array"
             },
@@ -1769,7 +1769,7 @@
                "type": "array"
             },
             "term_replaced_by": {
-               "$ref": "#/$defs/Thing"
+               "$ref": "#/$defs/Any"
             },
             "term_tracker_item": {
                "items": {
@@ -1847,7 +1847,7 @@
             },
             "consider": {
                "items": {
-                  "type": "string"
+                  "$ref": "#/$defs/Any"
                },
                "type": "array"
             },
@@ -2114,7 +2114,7 @@
                "type": "array"
             },
             "term_replaced_by": {
-               "$ref": "#/$defs/Thing"
+               "$ref": "#/$defs/Any"
             },
             "term_tracker_item": {
                "items": {

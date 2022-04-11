@@ -167,13 +167,24 @@
       "@type": "TypeDefinition"
     },
     {
-      "name": "label_type",
-      "definition_uri": "http://purl.obolibrary.org/obo/schema/LabelType",
-      "description": "A string that provides a human-readable name for an entity",
+      "name": "tidy_string",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/TidyString",
       "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
       "typeof": "string",
       "base": "str",
       "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "pattern": "^[^\\s].*[^\\s]$",
+      "@type": "TypeDefinition"
+    },
+    {
+      "name": "label_type",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/LabelType",
+      "description": "A string that provides a human-readable name for an entity",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "typeof": "tidy_string",
+      "base": "str",
+      "uri": "http://www.w3.org/2001/XMLSchema#string",
+      "pattern": "^[^\\s].*[^\\s]$",
       "@type": "TypeDefinition"
     },
     {
@@ -876,7 +887,7 @@
       "domain_of": [
         "HasLifeCycle"
       ],
-      "range": "Thing",
+      "range": "Any",
       "@type": "SlotDefinition"
     },
     {
@@ -917,11 +928,12 @@
       "is_a": "obsoletion_related_property",
       "slot_uri": "http://www.geneontology.org/formats/oboInOwl#consider",
       "multivalued": true,
+      "inlined": true,
       "owner": "HasLifeCycle",
       "domain_of": [
         "HasLifeCycle"
       ],
-      "range": "string",
+      "range": "Any",
       "@type": "SlotDefinition"
     },
     {
@@ -1554,6 +1566,9 @@
       "domain_of": [
         "HasSynonyms",
         "Axiom"
+      ],
+      "disjoint_with": [
+        "label"
       ],
       "range": "label_type",
       "@type": "SlotDefinition"
@@ -2927,6 +2942,40 @@
       "usage_slot_name": "database_cross_reference",
       "range": "CURIELiteral",
       "@type": "SlotDefinition"
+    },
+    {
+      "name": "ObsoleteAspect_label",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/label",
+      "mappings": [
+        "http://www.w3.org/2000/01/rdf-schema#label"
+      ],
+      "exact_mappings": [
+        "http://www.w3.org/2004/02/skos/core#prefLabel"
+      ],
+      "comments": [
+        "SHOULD follow OBO label guidelines",
+        "MUST be unique within an ontology",
+        "SHOULD be unique across OBO"
+      ],
+      "in_subset": [
+        "allotrope_required_profile",
+        "go_required_profile",
+        "obi_required_profile"
+      ],
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "is_a": "label",
+      "domain": "ObsoleteAspect",
+      "slot_uri": "http://www.w3.org/2000/01/rdf-schema#label",
+      "alias": "label",
+      "owner": "ObsoleteAspect",
+      "domain_of": [
+        "ObsoleteAspect"
+      ],
+      "is_usage_slot": true,
+      "usage_slot_name": "label",
+      "range": "label_type",
+      "pattern": "^obsolete",
+      "@type": "SlotDefinition"
     }
   ],
   "classes": [
@@ -3991,13 +4040,80 @@
       "slot_usage": {},
       "class_uri": "http://purl.obolibrary.org/obo/schema/PropertyExpression",
       "@type": "ClassDefinition"
+    },
+    {
+      "name": "ObsoleteAspect",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/ObsoleteAspect",
+      "description": "Auto-classifies anything that is obsolete",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "mixin": true,
+      "slots": [
+        "ObsoleteAspect_label"
+      ],
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/ObsoleteAspect",
+      "classification_rules": [
+        {
+          "slot_conditions": [
+            {
+              "name": "deprecated",
+              "equals_expression": "true",
+              "@type": "SlotDefinition"
+            }
+          ],
+          "@type": "AnonymousClassExpression"
+        }
+      ],
+      "@type": "ClassDefinition"
+    },
+    {
+      "name": "NotObsoleteAspect",
+      "definition_uri": "http://purl.obolibrary.org/obo/schema/NotObsoleteAspect",
+      "description": "Auto-classifies anything that is not obsolete",
+      "from_schema": "http://purl.obolibrary.org/obo/omo/schema",
+      "mixin": true,
+      "slot_usage": {},
+      "class_uri": "http://purl.obolibrary.org/obo/schema/NotObsoleteAspect",
+      "rules": [
+        {
+          "postconditions": {
+            "none_of": [
+              {
+                "slot_conditions": [
+                  {
+                    "name": "label",
+                    "pattern": "^obsolete",
+                    "@type": "SlotDefinition"
+                  }
+                ],
+                "@type": "AnonymousClassExpression"
+              }
+            ],
+            "@type": "AnonymousClassExpression"
+          },
+          "@type": "ClassRule"
+        }
+      ],
+      "classification_rules": [
+        {
+          "slot_conditions": [
+            {
+              "name": "none_of",
+              "deprecated": "JsonObj(equals_expression='true')",
+              "@type": "SlotDefinition"
+            }
+          ],
+          "@type": "AnonymousClassExpression"
+        }
+      ],
+      "@type": "ClassDefinition"
     }
   ],
   "metamodel_version": "1.7.0",
   "source_file": "obo_metadata.yaml",
-  "source_file_date": "2022-04-10T13:33:12",
-  "source_file_size": 25933,
-  "generation_date": "2022-04-10T13:33:19",
+  "source_file_date": "2022-04-10T14:35:55",
+  "source_file_size": 26556,
+  "generation_date": "2022-04-11T08:03:23",
   "@type": "SchemaDefinition",
   "@context": [
     "project/jsonld/obo_metadata.context.jsonld",

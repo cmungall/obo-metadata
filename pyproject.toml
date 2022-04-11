@@ -13,6 +13,9 @@ linkml-runtime = "^1.1.24"
 [tool.poetry.dev-dependencies]
 linkml = "^1.2.6"
 mkdocs-material = "^8.2.8"
+jupyter = "^1.0.0"
+schemasheets = "^0.1.9"
+ontodev-cogs = "^0.3.3"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

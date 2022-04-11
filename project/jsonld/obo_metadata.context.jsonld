@@ -1,5 +1,5 @@
 {
-   "_comments": "Auto generated from obo_metadata.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-04-10T13:33:18\n    Schema: Ontology-Metadata\n    metamodel version: 1.7.0\n    model version: 0.0.1\n    \n    id: http://purl.obolibrary.org/obo/omo/schema\n    description: Schema for ontology metadata\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
+   "_comments": "Auto generated from obo_metadata.yaml by jsonldcontextgen.py version: 0.1.1\n    Generation date: 2022-04-11T08:03:22\n    Schema: Ontology-Metadata\n    metamodel version: 1.7.0\n    model version: 0.0.1\n    \n    id: http://purl.obolibrary.org/obo/omo/schema\n    description: Schema for ontology metadata\n    license: https://creativecommons.org/publicdomain/zero/1.0/\n    ",
    "@context": {
       "IAO": {
          "@id": "http://purl.obolibrary.org/obo/IAO_",
@@ -84,6 +84,7 @@
          "@id": "dcterms:conformsTo"
       },
       "consider": {
+         "@type": "@id",
          "@id": "oio:consider"
       },
       "contributor": {

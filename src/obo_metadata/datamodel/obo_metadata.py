@@ -1,5 +1,5 @@
 # Auto generated from obo_metadata.yaml by pythongen.py version: 0.9.0
-# Generation date: 2022-04-10T13:33:25
+# Generation date: 2022-04-11T08:03:30
 # Schema: Ontology-Metadata
 #
 # id: http://purl.obolibrary.org/obo/omo/schema
@@ -82,7 +82,14 @@ class URLLiteral(String):
     type_model_uri = OMOSCHEMA.URLLiteral
 
 
-class LabelType(String):
+class TidyString(String):
+    type_class_uri = XSD.string
+    type_class_curie = "xsd:string"
+    type_name = "tidy string"
+    type_model_uri = OMOSCHEMA.TidyString
+
+
+class LabelType(TidyString):
     """ A string that provides a human-readable name for an entity """
     type_class_uri = XSD.string
     type_class_curie = "xsd:string"
@@ -366,8 +373,8 @@ class HasLifeCycle(AnnotationPropertyMixin):
 
     deprecated: Optional[Union[bool, Bool]] = None
     has_obsolescence_reason: Optional[str] = None
-    term_replaced_by: Optional[Union[dict, "Thing"]] = None
-    consider: Optional[Union[str, List[str]]] = empty_list()
+    term_replaced_by: Optional[Union[dict, Any]] = None
+    consider: Optional[Union[Union[dict, Any], List[Union[dict, Any]]]] = empty_list()
     has_alternative_id: Optional[Union[Union[str, URIorCURIE], List[Union[str, URIorCURIE]]]] = empty_list()
     excluded_from_QC_check: Optional[Union[dict, "Thing"]] = None
     excluded_subClassOf: Optional[Union[Union[str, ClassId], List[Union[str, ClassId]]]] = empty_list()
@@ -380,13 +387,6 @@ class HasLifeCycle(AnnotationPropertyMixin):
 
         if self.has_obsolescence_reason is not None and not isinstance(self.has_obsolescence_reason, str):
             self.has_obsolescence_reason = str(self.has_obsolescence_reason)
-
-        if self.term_replaced_by is not None and not isinstance(self.term_replaced_by, Thing):
-            self.term_replaced_by = Thing(**as_dict(self.term_replaced_by))
-
-        if not isinstance(self.consider, list):
-            self.consider = [self.consider] if self.consider is not None else []
-        self.consider = [v if isinstance(v, str) else str(v) for v in self.consider]
 
         if not isinstance(self.has_alternative_id, list):
             self.has_alternative_id = [self.has_alternative_id] if self.has_alternative_id is not None else []
@@ -635,8 +635,8 @@ class Term(NamedObject):
     OBO_foundry_unique_label: Optional[Union[str, List[str]]] = empty_list()
     deprecated: Optional[Union[bool, Bool]] = None
     has_obsolescence_reason: Optional[str] = None
-    term_replaced_by: Optional[Union[dict, Thing]] = None
-    consider: Optional[Union[str, List[str]]] = empty_list()
+    term_replaced_by: Optional[Union[dict, Any]] = None
+    consider: Optional[Union[Union[dict, Any], List[Union[dict, Any]]]] = empty_list()
     has_alternative_id: Optional[Union[Union[str, URIorCURIE], List[Union[str, URIorCURIE]]]] = empty_list()
     excluded_from_QC_check: Optional[Union[dict, Thing]] = None
     excluded_subClassOf: Optional[Union[Union[str, ClassId], List[Union[str, ClassId]]]] = empty_list()
@@ -717,13 +717,6 @@ class Term(NamedObject):
 
         if self.has_obsolescence_reason is not None and not isinstance(self.has_obsolescence_reason, str):
             self.has_obsolescence_reason = str(self.has_obsolescence_reason)
-
-        if self.term_replaced_by is not None and not isinstance(self.term_replaced_by, Thing):
-            self.term_replaced_by = Thing(**as_dict(self.term_replaced_by))
-
-        if not isinstance(self.consider, list):
-            self.consider = [self.consider] if self.consider is not None else []
-        self.consider = [v if isinstance(v, str) else str(v) for v in self.consider]
 
         if not isinstance(self.has_alternative_id, list):
             self.has_alternative_id = [self.has_alternative_id] if self.has_alternative_id is not None else []
@@ -1436,6 +1429,39 @@ class PropertyExpression(Expression):
         super().__post_init__(**kwargs)
 
 
+@dataclass
+class ObsoleteAspect(YAMLRoot):
+    """
+    Auto-classifies anything that is obsolete
+    """
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = OMOSCHEMA.ObsoleteAspect
+    class_class_curie: ClassVar[str] = "omoschema:ObsoleteAspect"
+    class_name: ClassVar[str] = "ObsoleteAspect"
+    class_model_uri: ClassVar[URIRef] = OMOSCHEMA.ObsoleteAspect
+
+    label: Optional[Union[str, LabelType]] = None
+
+    def __post_init__(self, *_: List[str], **kwargs: Dict[str, Any]):
+        if self.label is not None and not isinstance(self.label, LabelType):
+            self.label = LabelType(self.label)
+
+        super().__post_init__(**kwargs)
+
+
+class NotObsoleteAspect(YAMLRoot):
+    """
+    Auto-classifies anything that is not obsolete
+    """
+    _inherited_slots: ClassVar[List[str]] = []
+
+    class_class_uri: ClassVar[URIRef] = OMOSCHEMA.NotObsoleteAspect
+    class_class_curie: ClassVar[str] = "omoschema:NotObsoleteAspect"
+    class_name: ClassVar[str] = "NotObsoleteAspect"
+    class_model_uri: ClassVar[URIRef] = OMOSCHEMA.NotObsoleteAspect
+
+
 # Enumerations
 
 
@@ -1534,13 +1560,13 @@ slots.deprecated = Slot(uri=OWL.deprecated, name="deprecated", curie=OWL.curie('
                    model_uri=OMOSCHEMA.deprecated, domain=None, range=Optional[Union[bool, Bool]])
 
 slots.term_replaced_by = Slot(uri=IAO['0100001'], name="term_replaced_by", curie=IAO.curie('0100001'),
-                   model_uri=OMOSCHEMA.term_replaced_by, domain=None, range=Optional[Union[dict, Thing]])
+                   model_uri=OMOSCHEMA.term_replaced_by, domain=None, range=Optional[Union[dict, Any]])
 
 slots.has_obsolescence_reason = Slot(uri=IAO['0000231'], name="has_obsolescence_reason", curie=IAO.curie('0000231'),
                    model_uri=OMOSCHEMA.has_obsolescence_reason, domain=None, range=Optional[str])
 
 slots.consider = Slot(uri=OIO.consider, name="consider", curie=OIO.curie('consider'),
-                   model_uri=OMOSCHEMA.consider, domain=None, range=Optional[Union[str, List[str]]])
+                   model_uri=OMOSCHEMA.consider, domain=None, range=Optional[Union[Union[dict, Any], List[Union[dict, Any]]]])
 
 slots.has_alternative_id = Slot(uri=OIO.hasAlternativeId, name="has_alternative_id", curie=OIO.curie('hasAlternativeId'),
                    model_uri=OMOSCHEMA.has_alternative_id, domain=None, range=Optional[Union[Union[str, URIorCURIE], List[Union[str, URIorCURIE]]]])
@@ -1874,3 +1900,7 @@ slots.Property_subClassOf = Slot(uri=RDFS.subClassOf, name="Property_subClassOf"
 
 slots.Axiom_database_cross_reference = Slot(uri=OIO.hasDbXref, name="Axiom_database_cross_reference", curie=OIO.curie('hasDbXref'),
                    model_uri=OMOSCHEMA.Axiom_database_cross_reference, domain=Axiom, range=Optional[Union[Union[str, CURIELiteral], List[Union[str, CURIELiteral]]]])
+
+slots.ObsoleteAspect_label = Slot(uri=RDFS.label, name="ObsoleteAspect_label", curie=RDFS.curie('label'),
+                   model_uri=OMOSCHEMA.ObsoleteAspect_label, domain=None, range=Optional[Union[str, LabelType]],
+                   pattern=re.compile(r'^obsolete'))

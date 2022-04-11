@@ -13,8 +13,8 @@ message AnnotationProperty
   repeated oBOFoundryUniqueLabel String = 11
   optional deprecated Boolean = 12
   optional hasObsolescenceReason String = 13
-  optional termReplacedBy Thing = 14
-  repeated consider String = 15
+  optional termReplacedBy Any = 14
+  repeated consider Any = 15
   repeated hasAlternativeId Uriorcurie = 16
   optional excludedFromQCCheck Thing = 17
   repeated excludedSubClassOf Class = 18
@@ -97,8 +97,8 @@ message Class
   repeated oBOFoundryUniqueLabel String = 11
   optional deprecated Boolean = 12
   optional hasObsolescenceReason String = 13
-  optional termReplacedBy Thing = 14
-  repeated consider String = 15
+  optional termReplacedBy Any = 14
+  repeated consider Any = 15
   repeated hasAlternativeId Uriorcurie = 16
   optional excludedFromQCCheck Thing = 17
   repeated excludedSubClassOf Class = 18
@@ -163,8 +163,8 @@ message NamedIndividual
   repeated oBOFoundryUniqueLabel String = 11
   optional deprecated Boolean = 12
   optional hasObsolescenceReason String = 13
-  optional termReplacedBy Thing = 14
-  repeated consider String = 15
+  optional termReplacedBy Any = 14
+  repeated consider Any = 15
   repeated hasAlternativeId Uriorcurie = 16
   optional excludedFromQCCheck Thing = 17
   repeated excludedSubClassOf Class = 18
@@ -224,8 +224,8 @@ message ObjectProperty
   repeated oBOFoundryUniqueLabel String = 11
   optional deprecated Boolean = 12
   optional hasObsolescenceReason String = 13
-  optional termReplacedBy Thing = 14
-  repeated consider String = 15
+  optional termReplacedBy Any = 14
+  repeated consider Any = 15
   repeated hasAlternativeId Uriorcurie = 16
   optional excludedFromQCCheck Thing = 17
   repeated excludedSubClassOf Class = 18
@@ -309,8 +309,8 @@ message Subset
   repeated oBOFoundryUniqueLabel String = 11
   optional deprecated Boolean = 12
   optional hasObsolescenceReason String = 13
-  optional termReplacedBy Thing = 14
-  repeated consider String = 15
+  optional termReplacedBy Any = 14
+  repeated consider Any = 15
   repeated hasAlternativeId Uriorcurie = 16
   optional excludedFromQCCheck Thing = 17
   repeated excludedSubClassOf Class = 18
@@ -370,8 +370,8 @@ message TransitiveProperty
   repeated oBOFoundryUniqueLabel String = 11
   optional deprecated Boolean = 12
   optional hasObsolescenceReason String = 13
-  optional termReplacedBy Thing = 14
-  repeated consider String = 15
+  optional termReplacedBy Any = 14
+  repeated consider Any = 15
   repeated hasAlternativeId Uriorcurie = 16
   optional excludedFromQCCheck Thing = 17
   repeated excludedSubClassOf Class = 18

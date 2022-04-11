@@ -21,6 +21,8 @@ PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
 
 <URLLiteral> xsd:string
 
+<TidyString> xsd:string
+
 <LabelType> xsd:string
 
 <NarrativeText> xsd:string
@@ -195,8 +197,8 @@ linkml:Nodeidentifier NONLITERAL
           rdf:type [ <AnnotationPropertyMixin> ] ? ;
           owl:deprecated @linkml:Boolean ? ;
           IAO:0000231 @linkml:String ? ;
-          IAO:0100001 @<Thing> ? ;
-          oboInOwl:consider @linkml:String * ;
+          IAO:0100001 @<Any> ? ;
+          oboInOwl:consider @<Any> * ;
           oboInOwl:hasAlternativeId @linkml:Uriorcurie * ;
           <excluded_from_QC_check> @<Thing> ? ;
           <excluded_subClassOf> @<Class> * ;
@@ -302,6 +304,12 @@ linkml:Nodeidentifier NONLITERAL
     } OR @<Ontology> OR @<Term>
 )
 
+<NotObsoleteAspect> {
+    (  $<NotObsoleteAspect_tes> rdf:type . * ;
+       rdf:type [ <NotObsoleteAspect> ] ?
+    )
+}
+
 <ObjectProperty>  (
     CLOSED {
        (  $<ObjectProperty_tes> (  &<Property_tes> ;
@@ -321,6 +329,12 @@ linkml:Nodeidentifier NONLITERAL
        )
     } OR @<TransitiveProperty>
 )
+
+<ObsoleteAspect> {
+    (  $<ObsoleteAspect_tes> rdfs:label @<LabelType> ? ;
+       rdf:type [ <ObsoleteAspect> ] ?
+    )
+}
 
 <Ontology> CLOSED {
     (  $<Ontology_tes> (  &<NamedObject_tes> ;
@@ -433,8 +447,8 @@ linkml:Nodeidentifier NONLITERAL
           IAO:0000589 @linkml:String * ;
           owl:deprecated @linkml:Boolean ? ;
           IAO:0000231 @linkml:String ? ;
-          IAO:0100001 @<Thing> ? ;
-          oboInOwl:consider @linkml:String * ;
+          IAO:0100001 @<Any> ? ;
+          oboInOwl:consider @<Any> * ;
           oboInOwl:hasAlternativeId @linkml:Uriorcurie * ;
           <excluded_from_QC_check> @<Thing> ? ;
           <excluded_subClassOf> @<Class> * ;
