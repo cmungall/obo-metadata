@@ -42,7 +42,7 @@ See [examples](examples)
 PRELIMINARY!!!
 
 - [sheet](https://docs.google.com/spreadsheets/d/1Er8xYeKMvKKo-MGQf7w9jUgCWTOZwprDq9Td2Nuu4Po/edit#gid=488211236)
-- analysis [notebooks][notebooks]
+- analysis [notebooks](notebooks)
 
 ## Manifest
 
