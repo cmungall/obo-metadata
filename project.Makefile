@@ -6,3 +6,6 @@ sync:
 SHEETSPEC = src/linkml/export_spec.tsv
 project/sheets/obo-metadata.sheets.tsv: $(SOURCE_SCHEMA_PATH) $(SHEETSPEC)
 	$(RUN) linkml2sheets --overwrite -s $< $(SHEETSPEC) -o $@ 
+
+sparql:
+	$(RUN) gen-sparql -d project/sparql $(SOURCE_SCHEMA_PATH)
