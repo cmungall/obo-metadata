@@ -1,0 +1,2 @@
+URI	Field	Grouping	Parent	Description	Range	Deprecated	Exact	Close
+>slot_uri	slot	abstract	is_a	description	range	deprecated	exact_mappings	close_mappings

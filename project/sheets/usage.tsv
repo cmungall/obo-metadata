@@ -1,0 +1,175 @@
+Class	Field	Range	Multivalued	Required	Recommended
+	core_property				
+	id	uriorcurie		True	
+	label	label type	False		
+	definition	narrative text	True		
+	title	narrative text			
+	match_aspect				
+	match				
+	broadMatch	Thing	True		
+	closeMatch	Thing	True		
+	exactMatch	Thing	True		
+	narrowMatch	Thing	True		
+	database_cross_reference	CURIELiteral	True		
+	informative_property				
+	comment		True		
+	category				
+	image	Thing			
+	example_of_usage		True		
+	changeNote		True		
+	has_curation_status				
+	defaultLanguage				
+	has_ontology_root_term	Class	True		
+	conformsTo	Thing	True		
+	license	Thing			
+	depicted_by		True		
+	page		True		
+	version_property				
+	versionIRI	uriorcurie			
+	versionInfo				
+	obsoletion_related_property				
+	deprecated	boolean			
+	term_replaced_by	Any			
+	has_obsolescence_reason				
+	consider	Any	True		
+	has_alternative_id	uriorcurie	True		
+	temporal_interpretation	NamedIndividual			
+	never_in_taxon	Class	True		
+	is_a_defining_property_chain_axiom				
+	is_a_defining_property_chain_axiom_where_second_argument_is_reflexive				
+	provenance_property				
+	contributor	Thing	True		
+	creator		True		
+	created		False		
+	date		True		
+	source		True		
+	created_by				
+	creation_date		True		
+	date_retrieved				
+	editor_note	narrative text	True		
+	term_editor		True		
+	definition_source		True		
+	curator_note		True		
+	term_tracker_item		True		
+	ontology_term_requester				
+	imported_from	NamedIndividual	True		
+	has_axiom_label	Thing			
+	shortcut_annotation_property				
+	disconnected_from	Class			
+	excluded_axiom				
+	excluded_from_QC_check	Thing			
+	excluded_subClassOf	Class	True		
+	excluded_synonym		True		
+	should_conform_to	Thing			
+	has_rank	Thing			
+	alternative_term		True		
+	ISA_alternative_term				
+	IEDB_alternative_term				
+	OBO_foundry_unique_label				
+	synonym	label type	True		
+	editor_preferred_term		True		
+	has_exact_synonym	label type	True		
+	has_narrow_synonym	label type	True		
+	has_related_synonym	label type	True		
+	has_broad_synonym	label type	True		
+	has_synonym_type	AnnotationProperty	True		
+	has_obo_namespace		True		
+	in_subset	Subset	True		
+	reification_predicate				
+	annotatedProperty	AnnotationProperty			
+	annotatedSource	Thing			
+	annotatedTarget	Any			
+	imports				
+	logical_predicate				
+	cardinality				
+	complementOf				
+	disjointWith		True		
+	distinctMembers	Thing			
+	equivalentClass		True		
+	sameAs		True		
+	equivalentProperty	Thing	True		
+	hasValue				
+	intersectionOf				
+	inverseOf				
+	maxQualifiedCardinality				
+	members	Thing			
+	minCardinality	integer			
+	minQualifiedCardinality	integer			
+	onClass	ClassExpression			
+	onProperty	PropertyExpression	True		
+	oneOf	ClassExpression			
+	propertyChainAxiom		True		
+	qualifiedCardinality				
+	allValuesFrom				
+	someValuesFrom		True		
+	unionOf				
+	domain		True		
+	range		True		
+	isDefinedBy	Ontology			
+	seeAlso	Thing	True		
+	type	uriorcurie	True		
+	subClassOf	ClassExpression	True		
+	oboInOwl_id	string			
+	oboInOwl_ontology				
+	is_class_level	boolean			
+	is_cyclic	boolean			
+	is_inferred	boolean			
+	is_metadata_tag	boolean			
+	is_transitive	boolean			
+	notes		True		
+	shorthand		True		
+	url				
+	evidence				
+	external_ontology		True		
+	NCIT_definition_source				
+	NCIT_term_type				
+	NCIT_term_source				
+Any					
+AnnotationPropertyMixin					
+HasMinimalMetadata					
+HasSynonyms					
+HasMappings					
+HasProvenance					
+HasLifeCycle					
+HasCategory					
+HasUserInformation					
+Thing					
+NamedObject					
+Ontology					
+Ontology	title			True	
+Ontology	license			True	
+Ontology	versionIRI			True	
+Ontology	versionInfo			True	
+Term					
+Class					
+Class	label			True	
+Class	definition				True
+Class	broadMatch	Class			
+Class	exactMatch	Class			
+Class	narrowMatch	Class			
+Class	closeMatch	Class			
+Class	subClassOf	Class			
+Property					
+Property	label				True
+Property	definition				True
+Property	broadMatch	Property			
+Property	exactMatch	Property			
+Property	narrowMatch	Property			
+Property	closeMatch	Property			
+Property	subClassOf	Property			
+AnnotationProperty					
+ObjectProperty					
+TransitiveProperty					
+NamedIndividual					
+Axiom					
+Axiom	database_cross_reference				
+Subset					
+Anonymous					
+AnonymousClassExpression					
+Restriction					
+Expression					
+ClassExpression					
+PropertyExpression					
+ObsoleteAspect					
+ObsoleteAspect	label				
+NotObsoleteAspect					

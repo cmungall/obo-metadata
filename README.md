@@ -5,7 +5,7 @@ used for constraint checking.
 
 The intended workflow is:
 
- * The core properties are maintained in a google sheet and synced with COGs
+ * The core properties are [maintained in a google sheet](https://docs.google.com/spreadsheets/d/1YU_58PB-TaxlvJ5oIneUig8kB8CbmHyR30hUqfD0ZtE/edit) and synced with COGs
  * The sheet is compiled to different products including:
      1. a SCHEMA that can be used for VALIDATION
      2. OWL AnnotationProperties (omo.owl) that can be IMPORTED in different ontologies
@@ -27,6 +27,11 @@ command line tool implements an efficient OMO checker that takes as input:
  2. a SQLite version of an ontology created using rdftab
 
 And produces a report
+
+## Schema
+
+- [google sheets](https://docs.google.com/spreadsheets/d/1YU_58PB-TaxlvJ5oIneUig8kB8CbmHyR30hUqfD0ZtE/edit) (partial)
+- [obo-metadata.yaml](src/linkml/obo-metadata.yaml)
 
 ## Examples
 

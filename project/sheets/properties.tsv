@@ -1,0 +1,146 @@
+URI	Field	Grouping	Parent	Description	Range	Deprecated	Exact	Close
+	core_property	True		abstract grouping of core properties				
+	id		core_property	this maps to the URI in RDF	uriorcurie			
+rdfs:label	label		core_property		label type		skos:prefLabel	
+IAO:0000115	definition		core_property		narrative text		skos:definition	
+dcterms:title	title				narrative text			
+	match_aspect							
+	match	True						
+skos:broadMatch	broadMatch		match		Thing			
+skos:closeMatch	closeMatch		match		Thing			
+skos:exactMatch	exactMatch		match		Thing			
+skos:narrowMatch	narrowMatch		match		Thing			
+oio:hasDbXref	database_cross_reference		match		CURIELiteral			
+	informative_property	True						
+rdfs:comment	comment		informative_property					
+biolink:category	category		informative_property					
+sdo:image	image		informative_property		Thing			
+IAO:0000112	example_of_usage		informative_property				skos:example	
+skos:changeNote	changeNote		informative_property					
+IAO:0000114	has_curation_status		informative_property					
+protege:defaultLanguage	defaultLanguage		informative_property					
+IAO:0000700	has_ontology_root_term		informative_property		Class			
+dcterms:conformsTo	conformsTo		informative_property		Thing			
+dcterms:license	license		informative_property		Thing			
+foaf:depicted_by	depicted_by		informative_property					
+foaf:page	page		informative_property					
+	version_property	True						
+owl:versionIRI	versionIRI		version_property		uriorcurie			
+owl:versionInfo	versionInfo		version_property					pav:version
+	obsoletion_related_property	True		Grouping class for all properties related to lifecycle				
+owl:deprecated	deprecated		obsoletion_related_property		boolean			
+IAO:0100001	term_replaced_by		obsoletion_related_property		Any		dcterms:isReplacedBy	
+IAO:0000231	has_obsolescence_reason		obsoletion_related_property					
+oio:consider	consider		obsoletion_related_property		Any			
+oio:hasAlternativeId	has_alternative_id		obsoletion_related_property		uriorcurie			
+RO:0001900	temporal_interpretation				NamedIndividual			
+RO:0002161	never_in_taxon				Class			
+RO:0002581	is_a_defining_property_chain_axiom							
+RO:0002582	is_a_defining_property_chain_axiom_where_second_argument_is_reflexive							
+	provenance_property	True						
+dcterms:contributor	contributor		provenance_property		Thing			prov:wasAttributedTo
+dcterms:creator	creator		provenance_property					prov:wasAttributedTo
+dcterms:created	created		provenance_property	when the term came into being				pav:createdOn
+dcterms:date	date		provenance_property	when the term was updated				pav:authoredOn
+dcterms:source	source		provenance_property				http://purl.org/dc/terms/source|oio:source	
+oio:created_by	created_by		provenance_property			proposed obsoleted by OMO group 2022-04-12		
+oio:creation_date	creation_date		provenance_property			proposed obsoleted by OMO group 2022-04-12		
+oio:date_retrieved	date_retrieved		provenance_property					
+IAO:0000116	editor_note		provenance_property		narrative text			
+IAO:0000117	term_editor		provenance_property					
+IAO:0000119	definition_source		provenance_property					
+IAO:0000232	curator_note		provenance_property					
+IAO:0000233	term_tracker_item		provenance_property					
+IAO:0000234	ontology_term_requester		provenance_property					
+IAO:0000412	imported_from		provenance_property		NamedIndividual			
+IAO:0010000	has_axiom_label		provenance_property		Thing			
+	shortcut_annotation_property	True						
+	disconnected_from		shortcut_annotation_property		Class			
+	excluded_axiom	True						
+	excluded_from_QC_check		excluded_axiom		Thing			
+	excluded_subClassOf		excluded_axiom		Class			
+	excluded_synonym		excluded_axiom				skos:hiddenSynonym	
+	should_conform_to		excluded_axiom		Thing			
+	has_rank				Thing		obo:ncbitaxon/subsets/taxslim#has_rank	
+IAO:0000118	alternative_term						skos:altLabel	
+OBI:0001847	ISA_alternative_term		alternative_term					
+OBI:9991118	IEDB_alternative_term		alternative_term					
+IAO:0000589	OBO_foundry_unique_label		alternative_term					
+OIO:hasSynonym	synonym	True	alternative_term		label type			
+IAO:0000111	editor_preferred_term		alternative_term					
+oio:hasExactSynonym	has_exact_synonym		synonym		label type			
+oio:hasNarrowSynonym	has_narrow_synonym		synonym		label type			
+oio:hasRelatedSynonym	has_related_synonym				label type			
+oio:hasBroadSynonym	has_broad_synonym		synonym		label type			
+oio:hasSynonymType	has_synonym_type				AnnotationProperty			
+oio:hasOBONamespace	has_obo_namespace							
+oio:inSubset	in_subset			Maps an ontology element to a subset it belongs to	Subset			
+	reification_predicate	True						
+owl:annotatedProperty	annotatedProperty		reification_predicate		AnnotationProperty		rdf:predicate	
+owl:annotatedSource	annotatedSource		reification_predicate		Thing		rdf:subject	
+owl:annotatedTarget	annotatedTarget		reification_predicate		Any		rdf:object	
+owl:imports	imports							
+	logical_predicate	True						
+owl:cardinality	cardinality		logical_predicate					
+owl:complementOf	complementOf		logical_predicate					
+owl:disjointWith	disjointWith		logical_predicate					
+owl:distinctMembers	distinctMembers		logical_predicate		Thing			
+owl:equivalentClass	equivalentClass		logical_predicate					
+owl:sameAs	sameAs		logical_predicate					
+owl:equivalentProperty	equivalentProperty		logical_predicate		Thing			
+owl:hasValue	hasValue		logical_predicate					
+owl:intersectionOf	intersectionOf		logical_predicate					
+owl:inverseOf	inverseOf		logical_predicate					
+owl:maxQualifiedCardinality	maxQualifiedCardinality		logical_predicate					
+owl:members	members		logical_predicate		Thing			
+owl:minCardinality	minCardinality		logical_predicate		integer			
+owl:minQualifiedCardinality	minQualifiedCardinality		logical_predicate		integer			
+owl:onClass	onClass		logical_predicate		ClassExpression			
+owl:onProperty	onProperty		logical_predicate		PropertyExpression			
+owl:oneOf	oneOf		logical_predicate		ClassExpression			
+owl:propertyChainAxiom	propertyChainAxiom		logical_predicate					
+owl:qualifiedCardinality	qualifiedCardinality		logical_predicate					
+owl:allValuesFrom	allValuesFrom		logical_predicate					
+owl:someValuesFrom	someValuesFrom		logical_predicate					
+owl:unionOf	unionOf		logical_predicate					
+rdfs:domain	domain		logical_predicate					
+rdfs:range	range		logical_predicate					
+rdfs:isDefinedBy	isDefinedBy				Ontology			pav:importedFrom|dcterms:publisher
+rdfs:seeAlso	seeAlso				Thing			
+rdf:type	type		logical_predicate		uriorcurie			
+rdfs:subClassOf	subClassOf		logical_predicate		ClassExpression			
+oio:id	oboInOwl_id				string			
+oio:ontology	oboInOwl_ontology					todo		
+oio:is_class_level	is_class_level				boolean	deprecated oboInOwl property		
+oio:is_cyclic	is_cyclic				boolean	deprecated oboInOwl property		
+oio:is_inferred	is_inferred				boolean	deprecated oboInOwl property		
+oio:is_metadata_tag	is_metadata_tag				boolean	deprecated oboInOwl property		
+oio:is_transitive	is_transitive				boolean	deprecated oboInOwl property		
+oio:notes	notes					deprecated oboInOwl property		
+oio:shorthand	shorthand					deprecated oboInOwl property		
+oio:url	url					deprecated oboInOwl property		
+oio:evidence	evidence					deprecated oboInOwl property		
+oio:external_ontology	external_ontology					deprecated oboInOwl property		
+NCIT:P378	NCIT_definition_source					use OMO over NCIT		
+NCIT:P383	NCIT_term_type					use OMO over NCIT		
+NCIT:P384	NCIT_term_source					use OMO over NCIT		
+	title							
+	license							
+	versionIRI							
+	versionInfo							
+	label							
+	definition							
+	broadMatch				Class			
+	exactMatch				Class			
+	narrowMatch				Class			
+	closeMatch				Class			
+	subClassOf				Class			
+	label							
+	definition							
+	broadMatch				Property			
+	exactMatch				Property			
+	narrowMatch				Property			
+	closeMatch				Property			
+	subClassOf				Property			
+	database_cross_reference			Uses to indicate the source of an axiom			dcterms:source	
+	label							

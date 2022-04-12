@@ -1,0 +1,30 @@
+Class	Description
+Any	
+AnnotationPropertyMixin	Groups all annotation property bundles
+HasMinimalMetadata	Absolute minimum metadata model
+HasSynonyms	a mixin for a class whose members can have synonyms
+HasMappings	
+HasProvenance	
+HasLifeCycle	
+HasCategory	
+HasUserInformation	
+Thing	
+NamedObject	Anything with an IRI
+Ontology	An OWL ontology
+Term	A NamedThing that includes classes, properties, but not ontologies
+Class	
+Property	
+AnnotationProperty	
+ObjectProperty	
+TransitiveProperty	
+NamedIndividual	
+Axiom	
+Subset	A collection of terms grouped for some purpose
+Anonymous	Abstract root class for all anonymous (non-named; lacking an identifier) expressions
+AnonymousClassExpression	
+Restriction	
+Expression	
+ClassExpression	
+PropertyExpression	
+ObsoleteAspect	Auto-classifies anything that is obsolete
+NotObsoleteAspect	Auto-classifies anything that is not obsolete
