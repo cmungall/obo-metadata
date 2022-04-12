@@ -1,0 +1,809 @@
+type	severity	subject	instantiates	predicate	object	object_str	source	info
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	ERROR	CL:0000540	None	rdfs:label	None	None	sqlite:db/caro.db	Missing slot (label) for CL:0000540
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	ERROR	FBbt:01000119	None	rdfs:label	None	None	sqlite:db/caro.db	Missing slot (label) for FBbt:01000119
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	ERROR	NCBITaxon:4895	None	rdfs:label	None	None	sqlite:db/caro.db	Missing slot (label) for NCBITaxon:4895
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000001	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000001
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000006	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000006
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000009	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000009
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000016	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000016
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000018	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000018
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000019	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000019
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000026	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000026
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000029	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000029
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000034	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000034
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	BFO:0000141	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for BFO:0000141
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CARO:0000134	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CARO:0000134
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CARO:0001013	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CARO:0001013
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CARO:0010010	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CARO:0010010
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:13941	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:13941
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:22625	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:22625
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:22728	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:22728
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:23019	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:23019
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:23213	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:23213
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:23981	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:23981
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:24834	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:24834
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:25555	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:25555
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:25585	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:25585
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:25693	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:25693
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:25699	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:25699
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:25805	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:25805
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:25806	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:25806
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:26079	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:26079
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:26082	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:26082
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:27171	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:27171
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:27594	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:27594
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:28659	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:28659
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:29337	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:29337
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33241	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33241
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33242	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33242
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33280	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33280
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33306	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33306
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33408	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33408
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33459	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33459
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33461	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33461
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33559	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33559
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33570	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33570
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33582	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33582
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33608	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33608
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33635	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33635
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33659	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33659
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33661	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33661
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:33670	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:33670
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:35106	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:35106
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	CHEBI:35605	None	IAO:0000115	None	None	sqlite:db/caro.db	Missing slot (definition) for CHEBI:35605
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0008150	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0008150
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0008152	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0008152
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0009987	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0009987
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0035834	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0035834
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044092	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0044092
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044093	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0044093
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044106	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0044106
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044281	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0044281
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0062012	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0062012
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0062013	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0062013
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0062014	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0062014
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0071704	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0071704
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0080090	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0080090
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0097164	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:0097164
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1900619	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:1900619
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901160	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:1901160
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901360	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:1901360
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901564	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:1901564
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901605	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:1901605
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901615	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:1901615
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:2000211	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:2000211
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:2000212	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:2000212
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:2000213	None	oio:created_by	None	None	sqlite:db/caro.db	Deprecated slot (created_by) for GO:2000213
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	CARO:0020003	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for CARO:0020003
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0008150	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0008150
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0008152	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0008152
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0009987	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0009987
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0035834	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0035834
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044092	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0044092
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044093	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0044093
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044106	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0044106
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0044281	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0044281
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0062012	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0062012
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0062013	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0062013
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0062014	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0062014
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0071704	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0071704
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0080090	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0080090
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:0097164	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:0097164
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1900619	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:1900619
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901160	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:1901160
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901360	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:1901360
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901564	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:1901564
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901605	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:1901605
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:1901615	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:1901615
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:2000211	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:2000211
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:2000212	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:2000212
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	GO:2000213	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for GO:2000213
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0002078	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0002078
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0002124	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0002124
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0002226	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0002226
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0002266	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0002266
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0002309	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0002309
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0002318	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0002318
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0010000	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0010000
+https://w3id.org/linkml/reportDeprecatedPropertyComponent	WARNING	PATO:0010001	None	oio:creation_date	None	None	sqlite:db/caro.db	Deprecated slot (creation_date) for PATO:0010001
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0020003	None	oio:creation_date	None	None	sqlite:db/caro.db	Incorrect datatype for creation_date expected: xsd:string for string
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000002	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000002	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000003	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000004	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000006	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000016	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000017	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000040	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000040	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000141	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000005	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000005	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000005	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000006	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000006	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000007	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000008	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000008	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000009	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000012	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000012	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000012	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000013	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000013	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000013	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000013	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000013	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000014	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000014	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000014	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000014	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000024	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000024	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000040	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000040	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000040	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000042	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000042	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000069	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000069	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000071	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000133	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0001000	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010001	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010003	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010003	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010003	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010005	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010005	None	owl:disjointWith	None	None	sqlite:db/caro.db	Incorrect object type for disjointWith range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	BFO:0000023	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000003	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000005	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000006	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000007	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000021	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000024	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000040	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0000062	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0001008	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0002000	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0002101	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010000	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010009	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0010010	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0020000	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0020003	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	CARO:0020005	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0000820	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0001692	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006066	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006082	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006083	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006518	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006520	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006521	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006536	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006584	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006586	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006629	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006631	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006725	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006793	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006796	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0006807	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0008291	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0009064	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0009308	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0009448	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0009712	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0009820	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0009892	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0009893	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0010562	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0010563	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0010565	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0018958	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0019216	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	GO:0019217	None	owl:equivalentClass	None	None	sqlite:db/caro.db	Incorrect object type for equivalentClass range = string should_be_iri = False
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:caro.owl	None	dct:license	None	None	sqlite:db/caro.db	Unknown pred (dct:license) = <https://creativecommons.org/licenses/unspecified> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:caro.owl	None	dce:title	None	None	sqlite:db/caro.db	Unknown pred (dce:title) = None Common Anatomy Reference Ontology
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:caro.owl	None	dce:description	None	None	sqlite:db/caro.db	Unknown pred (dce:description) = None None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002259	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:valid_for_go_annotation_extension	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:valid_for_go_gp2term	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:valid_for_go_ontology	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:valid_for_gocam	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:caro#core	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:caro#plus	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:chebi#1_STAR	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:chebi#2_STAR	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:chebi#3_STAR	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:fbbt#InChIKey	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SynonymTypeProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:fbbt#olfactory_system_draft	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:fbbt#systematic_synonym	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SynonymTypeProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:fbbt#systematic_synonym	None	oio:hasScope	None	None	sqlite:db/caro.db	Unknown pred (oio:hasScope) = oio:hasExactSynonym None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#gocheck_do_not_annotate	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#gocheck_do_not_manually_annotate	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_agr	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_aspergillus	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_candida	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_chembl	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_drosophila	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_flybase_ribbon	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_generic	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_metagenomics	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_mouse	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_pir	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_plant	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_pombe	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:go#goslim_yeast	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:pato#attribute_slim	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:pato#cell_quality	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:pato#mpath_slim	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:pato#relational_slim	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:pato#scalar_slim	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:pato#value_slim	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	obo:ro/subsets#ro-eco	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = oio:SubsetProperty None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	RO:0040042	None	None	sqlite:db/caro.db	Unknown pred (RO:0040042) = BFO:0000031 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	RO:0040042	None	None	sqlite:db/caro.db	Unknown pred (RO:0040042) = BFO:0000020 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	RO:0040042	None	None	sqlite:db/caro.db	Unknown pred (RO:0040042) = BFO:0000019 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	RO:0040042	None	None	sqlite:db/caro.db	Unknown pred (RO:0040042) = BFO:0000017 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	RO:0040042	None	None	sqlite:db/caro.db	Unknown pred (RO:0040042) = BFO:0000004 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	RO:0040042	None	None	sqlite:db/caro.db	Unknown pred (RO:0040042) = BFO:0000003 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	RO:0040042	None	None	sqlite:db/caro.db	Unknown pred (RO:0040042) = BFO:0000002 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000050	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0002131 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000051	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0002131 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000062	None	dce:source	None	None	sqlite:db/caro.db	Unknown pred (dce:source) = None http://www.obofoundry.org/ro/#OBO_REL:preceded_by
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000062	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0002086 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000063	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0002222 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000052	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0002314 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000057	None	dce:source	None	None	sqlite:db/caro.db	Unknown pred (dce:source) = None http://www.obofoundry.org/ro/#OBO_REL:has_participant
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000079	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000052 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000080	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000052 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000081	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000052 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000085	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000053 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000086	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000053 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000087	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000053 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000091	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000053 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0000092	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0000052 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002000	None	rdfs:subPropertyOf	None	None	sqlite:db/caro.db	Unknown pred (rdfs:subPropertyOf) = RO:0002323 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002005	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = None http://www.ncbi.nlm.nih.gov/pubmed/22402613
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002006	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002087	None	obo:UBPROP_0000001	None	None	sqlite:db/caro.db	Unknown pred (obo:UBPROP_0000001) = None A non-transitive temporal relation in which one process immediately precedes another process, such that there is no interval of time between the two processes[SIO:000251].
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002090	None	RO:0002575	None	None	sqlite:db/caro.db	Unknown pred (RO:0002575) = BFO:0000063 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002100	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None BFO_0000051 some (GO_0043025 and BFO_0000050 some ?Y)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002100	None	IAO:0000424	None	None	sqlite:db/caro.db	"Unknown pred (IAO:0000424) = None <http://purl.obolibrary.org/obo/BFO_0000051> some (
+   <http://purl.obolibrary.org/obo/GO_0043025> and   <http://purl.obolibrary.org/obo/BFO_0000050> some ?Y)"
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002101	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002101	None	IAO:0000426	None	None	sqlite:db/caro.db	"Unknown pred (IAO:0000426) = None (forall (?x ?y) 
+	(iff 
+		(fasciculates_with ?x ?y)
+		(exists (?nps ?npbs)
+			(and 
+				(""neuron ; CL_0000540"" ?x)
+				(""neuron projection bundle ; CARO_0001001"" ?y) 
+				(""neuron projection segment ; CARO_0001502"" ?nps)
+				(""neuron projection bundle segment ; CARO_0001500' "" ?npbs)
+				(part_of ?npbs ?y) 			
+				(part_of ?nps ?x)
+				(part_of ?nps ?npbs)
+				(forall (?npbss)
+					(if
+						(and 
+							(""neuron projection bundle subsegment ; CARO_0001501"" ?npbss)
+							(part_of ?npbss ?npbs) 
+						)
+						(overlaps ?nps ?npbss)
+					))))))"
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002103	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002103	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None BFO_0000051 some (GO_0045211 that BFO_0000050 some (GO_0045202 that BFO_0000051 some (GO_0042734 that BFO_0000050 some ?Y)))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002103	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None <http://purl.obolibrary.org/obo/BFO_0000051> some (<http://purl.obolibrary.org/obo/GO_0045211> that part_of some (<http://purl.obolibrary.org/obo/GO_0045202> that has_part some (<http://purl.obolibrary.org/obo/GO_0042734> that <http://purl.obolibrary.org/obo/BFO_0000050> some Y?)))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002110	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002110	None	IAO:0000424	None	None	sqlite:db/caro.db	"Unknown pred (IAO:0000424) = None http://purl.obolibrary.org/obo/BFO_0000051 some (
+   http://purl.org/obo/owl/GO#GO_0045211 and http://purl.obolibrary.org/obo/BFO_0000050 some (
+      http://purl.org/obo/owl/GO#GO_0045202 and http://purl.obolibrary.org/obo/BFO_0000050 some ?Y))"
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002110	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None BFO_0000051 some (GO_0045211 and BFO_0000050 some (GO_0045202 and BFO_0000050 some ?Y))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002113	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002113	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None BFO_0000051 some (GO_0042734 that BFO_0000050 some (GO_0045202 that BFO_0000050 some ?Y))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002113	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None <http://purl.obolibrary.org/obo/BFO_0000051> some (<http://purl.obolibrary.org/obo/GO_0042734> that <http://purl.obolibrary.org/obo/BFO_0000050> some (<http://purl.obolibrary.org/obo/GO_0045202> that <http://purl.obolibrary.org/obo/BFO_0000050> some Y?)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002120	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002120	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None BFO_0000051 some (GO_0042734 that BFO_0000050 some (GO_0045202 that BFO_0000051 some (GO_0045211 that BFO_0000050 some ?Y)))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002120	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None <http://purl.obolibrary.org/obo/BFO_0000051> some (<http://purl.obolibrary.org/obo/GO_0042734> that part_of some (<http://purl.obolibrary.org/obo/GO_0045202> that <http://purl.obolibrary.org/obo/BFO_0000051> some (<http://purl.obolibrary.org/obo/GO_0045211> that <http://purl.obolibrary.org/obo/BFO_0000050> some Y?)))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002130	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002130	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None RO_0002131 some (GO_0045202 and BFO_0000050 some ?Y)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002130	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None <http://purl.obolibrary.org/obo/RO_0002131> some (<http://purl.obolibrary.org/obo/GO_0045202> that <http://purl.obolibrary.org/obo/BFO_0000050> some Y?)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002131	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002131	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None BFO_0000051 some (BFO_0000050 some ?Y)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002132	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002132	None	IAO:0000426	None	None	sqlite:db/caro.db	"Unknown pred (IAO:0000426) = None (forall (?x ?y) 
+	(iff 
+		(has_fasciculating_neuron_projection ?x ?y)
+		(exists (?nps ?npbs)		
+			(and 
+				(""neuron projection bundle ; CARO_0001001"" ?x)
+				(""neuron projection ; GO0043005"" ?y)
+				(""neuron projection segment ; CARO_0001502"" ?nps)
+				(""neuron projection bundle segment ; CARO_0001500"" ?npbs)
+				(part_of ?nps ?y)
+				(part_of ?npbs ?x)
+				(part_of ?nps ?npbs)
+				(forall (?npbss)
+					(if
+						(and 
+							(""neuron projection bundle subsegment ; CARO_0001501"" ?npbss)
+							(part_of ?npbss ?npbs) 
+						)
+						(overlaps ?nps ?npbss)
+					))))))"
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002134	None	<http://purl.org/spar/cito/citesAsAuthority>	None	None	sqlite:db/caro.db	Unknown pred (<http://purl.org/spar/cito/citesAsAuthority>) = <http://www.ncbi.nlm.nih.gov/pubmed/22402613> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002134	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None RO_0002132 some (GO_0043005 that (RO_0002131 some (GO_0045202 that BFO_0000050 some ?Y)))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002134	None	IAO:0000424	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000424) = None <http://purl.obolibrary.org/obo/RO_0002132> some (<http://purl.obolibrary.org/obo/GO_0043005> that (<http://purl.obolibrary.org/obo/RO_0002131> some (<http://purl.obolibrary.org/obo/GO_0045202> that <http://purl.obolibrary.org/obo/BFO_0000050> some Y?)))
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002151	None	IAO:0000426	None	None	sqlite:db/caro.db	"Unknown pred (IAO:0000426) = None (forall (?x ?y) 
+	(iff 
+		(proper_overlaps ?x ?y)
+		(and 
+			(overlaps ?x ?y)
+			(not (part_of ?x ?y)) 
+			(not (part_of ?y ?x)))))"
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002211	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None false
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002212	None	RO:0004050	None	None	sqlite:db/caro.db	Unknown pred (RO:0004050) = RO:0002211 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002213	None	RO:0004049	None	None	sqlite:db/caro.db	Unknown pred (RO:0004049) = RO:0002211 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002222	None	dct:source	None	None	sqlite:db/caro.db	Unknown pred (dct:source) = None https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002304	None	dct:creator	None	None	sqlite:db/caro.db	Unknown pred (dct:creator) = None cjm
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002304	None	RO:0004049	None	None	sqlite:db/caro.db	Unknown pred (RO:0004049) = RO:0002411 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002305	None	dct:creator	None	None	sqlite:db/caro.db	Unknown pred (dct:creator) = None cjm
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002305	None	RO:0004050	None	None	sqlite:db/caro.db	Unknown pred (RO:0004050) = RO:0002411 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002412	None	RO:0002575	None	None	sqlite:db/caro.db	Unknown pred (RO:0002575) = RO:0002411 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002429	None	RO:0004049	None	None	sqlite:db/caro.db	Unknown pred (RO:0004049) = RO:0002428 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002430	None	RO:0004050	None	None	sqlite:db/caro.db	Unknown pred (RO:0004050) = RO:0002428 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002434	None	<http://www.w3.org/2004/02/skos/core#closeMatch>	None	None	sqlite:db/caro.db	Unknown pred (<http://www.w3.org/2004/02/skos/core#closeMatch>) = None http://purl.obolibrary.org/obo/MI_0914
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002436	None	<http://www.w3.org/2004/02/skos/core#closeMatch>	None	None	sqlite:db/caro.db	Unknown pred (<http://www.w3.org/2004/02/skos/core#closeMatch>) = None http://purl.obolibrary.org/obo/MI_0915
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002578	None	RO:0002575	None	None	sqlite:db/caro.db	Unknown pred (RO:0002575) = RO:0002211 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002629	None	RO:0004049	None	None	sqlite:db/caro.db	Unknown pred (RO:0004049) = RO:0002578 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0002630	None	RO:0004050	None	None	sqlite:db/caro.db	Unknown pred (RO:0004050) = RO:0002578 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0004032	None	RO:0004049	None	None	sqlite:db/caro.db	Unknown pred (RO:0004049) = RO:0002264 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0004033	None	RO:0004050	None	None	sqlite:db/caro.db	Unknown pred (RO:0004050) = RO:0002264 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0004034	None	RO:0004049	None	None	sqlite:db/caro.db	Unknown pred (RO:0004049) = RO:0002263 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0004035	None	RO:0004050	None	None	sqlite:db/caro.db	Unknown pred (RO:0004050) = RO:0002263 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0004046	None	RO:0004050	None	None	sqlite:db/caro.db	Unknown pred (RO:0004050) = RO:0002418 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0004047	None	RO:0004049	None	None	sqlite:db/caro.db	Unknown pred (RO:0004049) = RO:0002418 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0019000	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-8688-6599> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0019001	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-8688-6599> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	RO:0019002	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-8688-6599> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000001	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000001	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Entity
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000001	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None entity
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None if b is a material entity, then there is some temporal interval (referred to below as a one-dimensional temporal region) during which b exists. (axiom label in BFO2 Reference: [011-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None if b is a continuant and if, for some t, cis continuant_part of b at t, then c is a continuant. (axiom label in BFO2 Reference: [009-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None if b is a continuant and if, for some t, c has_continuant_part b at t, then c is a continuant. (axiom label in BFO2 Reference: [126-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity. (axiom label in BFO2 Reference: [008-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Continuant
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000002	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None continuant
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000003	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000003	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000003	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None b is an occurrent entity iff b is an entity that has temporal parts. (axiom label in BFO2 Reference: [079-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000003	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None Every occurrent occupies_spatiotemporal_region some spatiotemporal region. (axiom label in BFO2 Reference: [108-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000003	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None An occurrent is an entity that unfolds itself in time or it is the instantaneous boundary of such an entity (for example a beginning or an ending) or it is a temporal or spatiotemporal region which such an entity occupies_temporal_region or occupies_spatiotemporal_region. (axiom label in BFO2 Reference: [077-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000003	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Occurrent
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000003	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None occurrent
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000004	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000004	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000004	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000004	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None For every independent continuant b and time t during the region of time spanned by its life, there are entities which s-depends_on b during t. (axiom label in BFO2 Reference: [018-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000004	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None For any independent continuant b and any time t there is some spatial region r such that b is located_in r at t. (axiom label in BFO2 Reference: [134-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000004	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None IndependentContinuant
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000004	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None ic
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000006	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000006	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000006	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000006	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000006	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None SpatialRegion
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000006	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None s-region
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000009	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000009	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None A two-dimensional spatial region is a spatial region that is of two dimensions. (axiom label in BFO2 Reference: [039-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000009	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None TwoDimensionalSpatialRegion
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000009	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None 2d-s-region
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000015	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000015	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Process
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000015	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None process
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000016	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000016	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000016	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000016	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000016	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Disposition
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000016	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None disposition
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000017	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000017	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000017	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None All realizable dependent continuants have independent continuants that are not spatial regions as their bearers. (axiom label in BFO2 Reference: [060-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000017	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None To say that b is a realizable entity is to say that b is a specifically dependent continuant that inheres in some independent continuant which is not a spatial region and is of a type instances of which are realized in processes of a correlated type. (axiom label in BFO2 Reference: [058-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000017	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None RealizableEntity
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000017	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None realizable
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000018	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000018	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None A zero-dimensional spatial region is a point in space. (axiom label in BFO2 Reference: [037-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000018	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None ZeroDimensionalSpatialRegion
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000018	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None 0d-s-region
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000019	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000019	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000019	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000019	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000019	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Quality
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000019	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None quality
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000020	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000020	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None SpecificallyDependentContinuant
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000020	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None sdc
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000023	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000023	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000023	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Role
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000023	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None role
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000026	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000026	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None A one-dimensional spatial region is a line or aggregate of lines stretching from one point in space to another. (axiom label in BFO2 Reference: [038-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000026	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None OneDimensionalSpatialRegion
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000026	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None 1d-s-region
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000029	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000029	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000029	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Site
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000029	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None site
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000034	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000034	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000034	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None Function
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000034	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None function
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	IAO:0000602	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000602) = None (forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	IAO:0000601	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000601) = None Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	IAO:0000600	None	None	sqlite:db/caro.db	Unknown pred (IAO:0000600) = None A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None MaterialEntity
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000040	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None material
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000141	None	BFO:0000180	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000180) = None ImmaterialEntity
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	BFO:0000141	None	BFO:0000179	None	None	sqlite:db/caro.db	Unknown pred (BFO:0000179) = None immaterial
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0000000	None	owl:disjointUnionOf	None	None	sqlite:db/caro.db	Unknown pred (owl:disjointUnionOf) = _:riog00000662 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0001008	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None 10.7.2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0001009	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None 10.10.2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0001010	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None 9/18/11
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010000	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Sun Feb 27 10:53:00 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010001	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Sun Feb 27 11:00:35 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010002	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Sun Feb 27 11:13:17 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010003	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Fri Mar 04 07:09:17 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010004	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None 7.16.2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010005	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Fri Mar 04 07:13:46 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010006	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Fri Mar 04 07:14:57 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010007	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Fri Mar 04 07:16:21 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010009	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Wed Mar 09 06:22:07 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0010010	None	IAO:creation_date	None	None	sqlite:db/caro.db	Unknown pred (IAO:creation_date) = None Wed Mar 09 08:02:50 GMT 2011
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CARO:0020003	None	<ttp://www.geneontology.org/formats/oboInOwl#created_by>	None	None	sqlite:db/caro.db	Unknown pred (<ttp://www.geneontology.org/formats/oboInOwl#created_by>) = None dos
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:10545	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 0.0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:10545	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 0.000548579903
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:10545	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:13941	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NC([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:13941	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 60.00910
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:13941	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 60.03212
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:13941	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None KXDHJXZQYSOELW-UHFFFAOYSA-M
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:13941	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/CH3NO2/c2-1(3)4/h2H2,(H,3,4)/p-1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:13941	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CH2NO2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:13941	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:140601	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None *C(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:140601	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 44.99765
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:140601	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 45.017
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:140601	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CHO2R
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:140601	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:142408	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None *[NH3+]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:142408	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 17.02655
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:142408	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 17.031
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:142408	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None H3NR
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:142408	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None +1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:14321	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [NH3+]C(CCC([O-])=O)C([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:14321	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 146.04588
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:14321	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 146.12136
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:14321	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None WHUUTDBJXJRKMK-UHFFFAOYSA-M
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:14321	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/p-1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:14321	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C5H8NO4
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:14321	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15354	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None C[N+](C)(C)CCO
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15354	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 104.10699
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15354	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 104.17080
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15354	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None OEYIOHPDSNJKLS-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15354	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C5H14NO/c1-6(2,3)4-5-7/h7H,4-5H2,1-3H3/q+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15354	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C5H14NO
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15354	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None +1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15355	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None CC(=O)OCC[N+](C)(C)C
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15355	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 146.11756
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15355	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 146.20748
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15355	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None OIPILFWXSMYKGL-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15355	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C7H16NO2/c1-7(9)10-6-5-8(2,3)4/h5-6H2,1-4H3/q+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15355	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C7H16NO2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15355	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None +1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15366	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None CC(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15366	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 60.02113
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15366	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 60.05200
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15366	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QTBSBXVTEAMEQO-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15366	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15366	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C2H4O2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15366	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15705	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None N[C@@H]([*])C(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15705	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 74.02420
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15705	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 74.05870
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15705	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C2H4NO2R
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15705	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15760	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NCCc1ccc(O)cc1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15760	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 137.08406
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15760	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 137.17900
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15760	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None DZGWFCGJZKJUFP-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15760	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C8H11NO/c9-6-5-7-1-3-8(10)4-2-7/h1-4,10H,5-6,9H2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15760	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C8H11NO
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:15760	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16134	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [H]N([H])[H]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16134	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 17.02655
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16134	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 17.03056
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16134	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QGZKDVFQNNGYKY-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16134	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H3N/h1H3
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16134	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None H3N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16134	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16670	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None (C2H2NOR)nC2H3NOR
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16670	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16765	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NCCc1c[nH]c2ccccc12
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16765	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 160.10005
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16765	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 160.21570
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16765	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None APJYDQYYACXCRM-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16765	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C10H12N2/c11-6-5-8-7-12-10-4-2-1-3-9(8)10/h1-4,7,12H,5-6,11H2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16765	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C10H12N2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16765	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16865	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NCCCC(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16865	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 103.06333
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16865	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 103.11980
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16865	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None BTCSSZJGUNDROE-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16865	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C4H9NO2/c5-3-1-2-4(6)7/h1-3,5H2,(H,6,7)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16865	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C4H9NO2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:16865	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17087	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [*]C([*])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17087	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 27.99491
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17087	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 28.010
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17087	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None COR2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17087	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17134	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NCC(O)c1ccc(O)cc1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17134	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 153.07898
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17134	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 153.17848
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17134	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QHGUCRYDKWKLMG-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17134	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C8H11NO2/c9-5-8(11)6-1-3-7(10)4-2-6/h1-4,8,10-11H,5,9H2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17134	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C8H11NO2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17134	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17968	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None CCCC([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17968	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 87.04515
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17968	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 87.09718
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17968	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None FERIUCNNQQJTOY-UHFFFAOYSA-M
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17968	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C4H8O2/c1-2-3-4(5)6/h2-3H2,1H3,(H,5,6)/p-1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17968	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C4H7O2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:17968	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18000	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None *N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18000	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 16.01872
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18000	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 16.023
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18000	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None H2NR
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18000	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18237	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NC(CCC(O)=O)C(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18237	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 147.05316
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18237	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 147.12930
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18237	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None WHUUTDBJXJRKMK-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18237	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18237	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C5H9NO4
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18237	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18243	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NCCc1ccc(O)c(O)c1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18243	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 153.07898
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18243	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 153.17840
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18243	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None VYFYYTLLBUKUHU-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18243	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C8H11NO2/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,10-11H,3-4,9H2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18243	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C8H11NO2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18243	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18295	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NCCc1c[nH]cn1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18295	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 111.07965
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18295	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 111.14518
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18295	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None NTYJJOPFIAHURM-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18295	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C5H9N3/c6-2-1-5-3-7-4-8-5/h3-4H,1-2,6H2,(H,7,8)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18295	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C5H9N3
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18295	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18367	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [O-]P([O-])([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18367	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 94.95507
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18367	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 94.97136
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18367	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None NBIIXXVUZAFLBC-UHFFFAOYSA-K
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18367	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-3
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18367	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None O4P
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:18367	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -3
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23004	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None *C(N)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23004	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 44.01364
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23004	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 44.03272
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23004	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CH2NO
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23004	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23019	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None O=C(*)*
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23019	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 27.99491
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23019	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 28.01010
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23019	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CO
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:23019	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25555	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 14.00307
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25555	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 14.007
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25555	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25555	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25805	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [O]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25805	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 15.99491
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25805	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 15.99940
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25805	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QVGXLLKOCUKJST-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25805	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25805	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:25805	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26078	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [H]OP(=O)(O[H])O[H]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26078	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 97.97690
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26078	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 97.99520
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26078	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None NBIIXXVUZAFLBC-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26078	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26078	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None H3O4P
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26078	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26167	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None OC(C(*)N)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26167	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 74.02420
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26167	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 74.059
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26167	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C2H4NO2R
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26167	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26666	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None OC([*])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26666	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 44.99765
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26666	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 45.017
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26666	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CH2OR
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:26666	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:27594	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [C]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:27594	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 12.00000
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:27594	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 12.01070
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:27594	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None OKTJSMMVPCPJKN-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:27594	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:27594	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:27594	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28616	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NC(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28616	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 61.01638
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28616	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 61.04006
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28616	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None KXDHJXZQYSOELW-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28616	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/CH3NO2/c2-1(3)4/h2H2,(H,3,4)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28616	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CH3NO2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28616	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28659	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [P]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28659	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 30.97376
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28659	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 30.97376
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28659	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None OAICVXFJPJFONN-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28659	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/P
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28659	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None P
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28659	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28790	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None C1=CC(=CC=2C(=CNC12)CCN)O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28790	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 176.09496
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28790	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 176.215
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28790	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QZAYGJVTTNCVMB-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28790	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C10H12N2O/c11-4-3-7-6-12-10-2-1-8(13)5-9(7)10/h1-2,5-6,12-13H,3-4,11H2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28790	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C10H12N2O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28790	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28868	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [O-]C([*])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28868	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 43.98983
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28868	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 44.00950
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28868	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CO2R
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28868	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28938	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [H][N+]([H])([H])[H]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28938	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 18.03383
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28938	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 18.03850
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28938	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QGZKDVFQNNGYKY-UHFFFAOYSA-O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28938	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H3N/h1H3/p+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28938	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None H4N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28938	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None +1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28965	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [O-]C(=O)[*]C([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28965	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 87.97966
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28965	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 88.019
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28965	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C2O4R
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:28965	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29067	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [O-]C([*])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29067	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 43.98983
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29067	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 44.00950
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29067	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CO2R
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29067	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29337	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [H][N-][H]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29337	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 16.01927
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29337	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 16.02262
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29337	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None HYGWNUKOUCZBND-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29337	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H2N/h1H2/q-1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29337	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None H2N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29337	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29340	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [N--][H]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29340	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 15.01200
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29340	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 15.01468
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29340	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None DZQYTNGKSBCIOE-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29340	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/HN/h1H/q-2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29340	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None HN
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29340	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29987	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NC(CCC([O-])=O)C([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29987	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 145.03860
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29987	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 145.11342
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29987	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None WHUUTDBJXJRKMK-UHFFFAOYSA-L
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29987	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C5H9NO4/c6-3(5(9)10)1-2-4(7)8/h3H,1-2,6H2,(H,7,8)(H,9,10)/p-2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29987	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C5H7NO4
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:29987	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30089	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None CC([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30089	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 59.01385
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30089	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 59.04402
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30089	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QTBSBXVTEAMEQO-UHFFFAOYSA-M
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30089	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)/p-1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30089	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C2H3O2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30089	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30566	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NCCCC([O-])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30566	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 102.05605
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30566	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 102.11186
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30566	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None BTCSSZJGUNDROE-UHFFFAOYSA-M
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30566	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C4H9NO2/c5-3-1-2-4(6)7/h1-3,5H2,(H,6,7)/p-1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30566	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C4H8NO2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30566	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None -1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30772	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None CCCC(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30772	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 88.05243
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30772	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 88.10510
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30772	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None FERIUCNNQQJTOY-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30772	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C4H8O2/c1-2-3-4(5)6/h2-3H2,1H3,(H,5,6)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30772	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C4H8O2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30772	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30879	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None O[*]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30879	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 17.00274
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30879	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 17.007
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30879	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None HOR
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:30879	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:327995	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [NH3+]CCc1ccc(O)cc1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:327995	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 138.09134
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:327995	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 138.18700
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:327995	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None DZGWFCGJZKJUFP-UHFFFAOYSA-O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:327995	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C8H11NO/c9-6-5-7-1-3-8(10)4-2-7/h1-4,10H,5-6,9H2/p+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:327995	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C8H12NO
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:327995	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None +1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:32877	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None N[*]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:32877	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 16.01872
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:32877	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 16.02260
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:32877	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None H2NR
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:32877	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33308	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [*]C(=O)O[*]
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33308	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 43.98983
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33308	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 44.010
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33308	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CO2R2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33308	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33566	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None OC1=C(O)C(*)=C(*)C(*)=C1*
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33566	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 106.00548
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33566	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 106.079
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33566	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C6H2O2R4
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33566	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33567	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 151.06333
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33567	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 151.163
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33567	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None C8H9NO2R2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33567	None	obo:chebi/charge	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/charge) = None 0
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33575	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None OC([*])=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33575	None	obo:chebi/monoisotopicmass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/monoisotopicmass) = None 44.99765
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33575	None	obo:chebi/mass	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/mass) = None 45.01740
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33575	None	obo:chebi/formula	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/formula) = None CHO2R
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33704	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None NC([*])C(O)=O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:33853	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None C1(=C(C(=C(C(=C1*)*)*)*)*)O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:350546	None	obo:chebi/smiles	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/smiles) = None [NH3+]CCc1c[nH]c2ccc(O)cc12
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:350546	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QZAYGJVTTNCVMB-UHFFFAOYSA-O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:350546	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C10H12N2O/c11-4-3-7-6-12-10-2-1-8(13)5-9(7)10/h1-2,5-6,12-13H,3-4,11H2/p+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:39745	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None NBIIXXVUZAFLBC-UHFFFAOYSA-M
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:39745	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:43474	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None NBIIXXVUZAFLBC-UHFFFAOYSA-L
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:43474	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H3O4P/c1-5(2,3)4/h(H3,1,2,3,4)/p-2
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:49637	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None YZCKVEUIGOORGS-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:49637	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/H
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:57887	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None APJYDQYYACXCRM-UHFFFAOYSA-O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:57887	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C10H12N2/c11-6-5-8-7-12-10-4-2-1-3-9(8)10/h1-4,7,12H,5-6,11H2/p+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:58025	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None QHGUCRYDKWKLMG-UHFFFAOYSA-O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:58025	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C8H11NO2/c9-5-8(11)6-1-3-7(10)4-2-6/h1-4,8,10-11H,5,9H2/p+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:58432	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None NTYJJOPFIAHURM-UHFFFAOYSA-O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:58432	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C5H9N3/c6-2-1-5-3-7-4-8-5/h3-4H,1-2,6H2,(H,7,8)/p+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:59888	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None BTCSSZJGUNDROE-UHFFFAOYSA-N
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:59888	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C4H9NO2/c5-3-1-2-4(6)7/h1-3,5H2,(H,6,7)
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:59905	None	obo:chebi/inchikey	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchikey) = None VYFYYTLLBUKUHU-UHFFFAOYSA-O
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	CHEBI:59905	None	obo:chebi/inchi	None	None	sqlite:db/caro.db	Unknown pred (obo:chebi/inchi) = None InChI=1S/C8H11NO2/c9-4-3-6-1-2-7(10)8(11)5-6/h1-2,5,10-11H,3-4,9H2/p+1
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0001861	None	RO:0002604	None	None	sqlite:db/caro.db	Unknown pred (RO:0002604) = PATO:0001959 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0002007	None	RO:0002604	None	None	sqlite:db/caro.db	Unknown pred (RO:0002604) = PATO:0002008 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0002078	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-2061-091X> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0002124	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-2061-091X> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0002226	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-2061-091X> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0002266	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-2061-091X> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0002309	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-2061-091X> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0002318	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-2061-091X> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0010000	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-7073-9172> None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	PATO:0010001	None	dct:contributor	None	None	sqlite:db/caro.db	Unknown pred (dct:contributor) = <https://orcid.org/0000-0002-7073-9172> None

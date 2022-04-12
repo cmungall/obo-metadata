@@ -42,8 +42,8 @@ See [examples](examples)
  * Analysis (v preliminary)
      * [notebooks](notebooks)
  * Derived files: [project](https://github.com/cmungall/obo-metadata/tree/main/project)
-     * Schemasheets: TODO: sync w COGS [project/schemasheets](project/schemasheets)
-     * JSON-Schema [project/json-schema](project/json)
+     * Schemasheets: TODO: sync w COGS [project/sheets](project/sheets)
+     * JSON-Schema [project/json-schema](project/jsonschema)
      * etc
 
 
