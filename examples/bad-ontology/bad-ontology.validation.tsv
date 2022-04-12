@@ -1,0 +1,17 @@
+type	severity	subject	instantiates	predicate	object	object_str	source	info
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	ERROR	EXAMPLE:1	None	rdfs:label	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (label) for EXAMPLE:1
+http://www.w3.org/ns/shacl#MaxCountConstraintComponent	ERROR	EXAMPLE:2	None	rdfs:label	None	None	sqlite:tests/input/bad-ontology.db	Too many vals for label
+http://www.w3.org/ns/shacl#MaxCountConstraintComponent	ERROR	EXAMPLE:2	None	rdfs:label	None	None	sqlite:tests/input/bad-ontology.db	Too many vals for label
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	EXAMPLE:9	None	rdfs:label	None	None	sqlite:tests/input/bad-ontology.db	Incorrect object type for label range = label type should_be_iri = False
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:1	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:1
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:2	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:2
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:4	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:4
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:5	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:5
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:6	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:6
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:7	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:7
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:8	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:8
+http://www.w3.org/ns/shacl#MinCountConstraintComponent	WARNING	EXAMPLE:9	None	IAO:0000115	None	None	sqlite:tests/input/bad-ontology.db	Missing slot (definition) for EXAMPLE:9
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	EXAMPLE:8	None	skos:exactMatch	None	None	sqlite:tests/input/bad-ontology.db	Incorrect object type for exactMatch range = Class should_be_iri = True
+http://www.w3.org/ns/shacl#DatatypeConstraintComponent	ERROR	EXAMPLE:7	None	owl:deprecated	None	None	sqlite:tests/input/bad-ontology.db	Incorrect datatype for deprecated expected: xsd:boolean for boolean
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	EXAMPLE:6	None	obo:TEMP#made_up_object_property	None	None	sqlite:tests/input/bad-ontology.db	Unknown pred (obo:TEMP#made_up_object_property) = EXAMPLE:0 None
+http://www.w3.org/ns/shacl#ClosedConstraintComponent	ERROR	EXAMPLE:6	None	obo:TEMP#made_up_data_property	None	None	sqlite:tests/input/bad-ontology.db	Unknown pred (obo:TEMP#made_up_data_property) = None foo

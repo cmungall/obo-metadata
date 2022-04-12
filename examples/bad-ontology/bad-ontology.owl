@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/TEMP#"
+     xml:base="http://purl.obolibrary.org/obo/TEMP"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:TEMP="http://purl.obolibrary.org/obo/TEMP#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/TEMP"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TEMP#made_up_data_property -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#made_up_data_property"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/TEMP#made_up_object_property -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/TEMP#made_up_object_property"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#is_metadata_tag -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seeAlso</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#deprecated -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated">
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2002/07/owl#deprecated</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deprecated</oboInOwl:id>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
+        <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deprecated</oboInOwl:shorthand>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">deprecated</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_0 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_0">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an example class</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:0</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">root</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an example class</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID:1</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_1 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_1">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:1</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">missing label, definition</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_10 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_10">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete with no metadata and with a logical axiom</rdfs:comment>
+        <rdfs:label>deprecated missing metadata</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_11 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_11">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">example of property reserved for deprecated</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_9"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-obsolete with consider</rdfs:comment>
+        <rdfs:label>non-deprecated 11</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_2 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_2">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:2</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple names</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name1</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is an example of a well-behaved class</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">well behaved</rdfs:comment>
+        <rdfs:label>well behaved class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_3 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_3">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex3 def1</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex3 def2</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:3</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multiple defs</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">example 3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_4 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_4">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:4</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duplicate name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_5 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_5">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:5</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duplicate name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_6 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_6">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <made_up_data_property rdf:datatype="http://www.w3.org/2001/XMLSchema#string">foo</made_up_data_property>
+        <made_up_object_property rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:6</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_7 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_7">
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EXAMPLE:7</oboInOwl:id>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">should be boolean</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex7</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_8 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_8">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">literal used in place of object</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ex8</rdfs:label>
+        <skos:exactMatch>foo</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/EXAMPLE_9 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/EXAMPLE_9">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">object used in place of literal</rdfs:comment>
+        <rdfs:label rdf:resource="http://purl.obolibrary.org/obo/EXAMPLE_0"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+
